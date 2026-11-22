@@ -1,0 +1,38 @@
+{
+  "n": 558,
+  "balanced_accuracy": 56.6,
+  "macro_f1": 58.45,
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 91.04,
+      "recall": 97.41,
+      "support": 501
+    },
+    "REFUTED": {
+      "precision": 40.91,
+      "recall": 15.79,
+      "support": 57
+    }
+  },
+  "accuracy": 89.07,
+  "forced_verdict_%": 0.0,
+  "avg_seconds": 4.04,
+  "avg_cost_per_claim": {
+    "llm_calls": 1.0,
+    "llm_calls_uncached": 0.97,
+    "prompt_tokens": 848.6,
+    "completion_tokens": 176.91,
+    "sparql_queries": 0.0,
+    "web_searches": 0.0
+  },
+  "errors": {
+    "wrong": 61,
+    "IK_%": 0.0,
+    "EM_%": 0.0,
+    "OC_%": 0.0,
+    "execution_error_%": 0.0
+  },
+  "dataset": "aggrefact_cnn",
+  "kind": "direct",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+}

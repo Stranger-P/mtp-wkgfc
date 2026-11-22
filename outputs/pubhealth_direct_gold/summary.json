@@ -1,0 +1,38 @@
+{
+  "n": 1231,
+  "balanced_accuracy": 80.41,
+  "macro_f1": 79.92,
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 73.66,
+      "recall": 91.99,
+      "support": 599
+    },
+    "REFUTED": {
+      "precision": 90.06,
+      "recall": 68.83,
+      "support": 632
+    }
+  },
+  "accuracy": 80.1,
+  "forced_verdict_%": 0.0,
+  "avg_seconds": 3.71,
+  "avg_cost_per_claim": {
+    "llm_calls": 1.0,
+    "llm_calls_uncached": 0.91,
+    "prompt_tokens": 208.72,
+    "completion_tokens": 146.5,
+    "sparql_queries": 0.0,
+    "web_searches": 0.0
+  },
+  "errors": {
+    "wrong": 245,
+    "IK_%": 0.0,
+    "EM_%": 0.0,
+    "OC_%": 0.0,
+    "execution_error_%": 0.0
+  },
+  "dataset": "pubhealth",
+  "kind": "direct",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+}

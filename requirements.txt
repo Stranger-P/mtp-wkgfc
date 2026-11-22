@@ -1,0 +1,8 @@
+# WKGFC reimplementation - Python 3.10+
+openai>=1.40      # LLM calls via OpenAI (or OpenAI-compatible servers)
+boto3>=1.39       # LLM calls via Amazon Bedrock (Claude)
+spacy>=3.7        # NER for initKGRetrieval; then: python -m spacy download en_core_web_trf
+pandas            # reads the gold-evidence .pkl datasets (SummEval, AggreFact-CNN, PubHealth)
+# Optional
+trafilatura       # clean page text when Config.fetch_full_pages = True
+# HTTP, caching, BM25, metrics and the TextGrad-style optimiser are implemented in the package itself.

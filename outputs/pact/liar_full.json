@@ -1,0 +1,404 @@
+{
+  "dataset": "liar_new",
+  "n": 199,
+  "disputed": 37,
+  "provenance": true,
+  "temporal": true,
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "balanced_accuracy": {
+    "direct": 73.59,
+    "wkgfc": 67.05,
+    "pact": 66.29,
+    "oracle": 81.06
+  },
+  "tribunal_right_on_disputed": 16,
+  "sided_with": {
+    "direct": 9,
+    "wkgfc": 20,
+    "unstated": 8
+  },
+  "parse_failures": 0,
+  "mcnemar_vs_wkgfc": {
+    "b": 3,
+    "c": 5,
+    "p": 0.7236736098317631
+  },
+  "mcnemar_vs_direct": {
+    "b": 18,
+    "c": 11,
+    "p": 0.26520539259150755
+  },
+  "seconds": 86.7,
+  "rulings": {
+    "liarnew-21607": {
+      "echo": "The evidence from vpm.org stating 'up 35.5%' and vdh.virginia.gov stating 'up 35% in first half of 2016' directly state facts rather than report assertions, meeting the echo check standard.",
+      "temporal": "The claim was made on December 3, 2021, and the most directly relevant evidence shows 'up 15% in 2021' from nbcwashington.com (confidence 0.85), which describes the actual period in question; the 35.5% figure appears to reference 2016 data, which is temporally misaligned with the December 2021 claim date.",
+      "mismatch": "There is a substantive temporal mismatch: the claim uses present tense on December 3, 2021, but the best-matched evidence for that period shows only a 15% increase in 2021, not 35%; the 35% figures in the evidence refer to 2016, not 2021.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "As of December 3, 2021, the most reliable evidence specific to that timeframe shows Virginia overdose deaths were up 15% in 2021, not 35%. While a 35% increase did occur historically (in 2016), the present-tense claim made in December 2021 is contradicted by the contemporaneous 2021 data.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21517": {
+      "echo": "The passages retrieved directly state facts about the telescope and Vatican's relationship to it, rather than merely reporting assertions, though some passages do reference conspiracy theories as claims being made.",
+      "temporal": "The evidence describes the state of affairs as of November 2021 and earlier, which is the relevant period for this claim.",
+      "mismatch": "The substantive difference is between 'owns' (exclusive ownership) versus 'participates in collaboration with' (shared involvement). The Vatican Observatory is located next to the LBT and collaborates with it, but does not own the telescope or the LUCIFER instrument.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.85,
+      "reason": "While LUCIFER was indeed a real instrument name associated with the Large Binocular Telescope on Mt. Graham, the claim that the Vatican 'owns' this telescope is refuted by evidence showing the Vatican Observatory merely shares space and collaborates with other organizations at the site. The ownership claim is substantively false; the Vatican does not own the telescope.",
+      "sided_with": null
+    },
+    "liarnew-23217": {
+      "echo": "The retrieved passages state that election counting procedures have changed and past elections were counted faster, rather than merely reporting someone's assertion of this fact.",
+      "temporal": "The passages describe historical changes in U.S. election counting procedures over time, which is directly relevant to evaluating a claim about what 'could easily' be done 'until a few years ago' as of November 2022.",
+      "mismatch": "Position 1 argues complete national counting on election night was never standard practice, but the claim only asserts it 'could easily' be done, not that it was standard\u2014these are substantively different assertions about capability versus practice.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "The evidence establishes that election counting speed has degraded over time, with past elections counted faster on election night than recent ones, which supports the core claim that the U.S. could more easily count votes on election night in earlier periods. While the exact timeline ('a few years ago') remains imprecise, the substantive assertion about historical capability is supported by the available evidence.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-23209": {
+      "echo": "The retrieved passages directly quote Ron Johnson's statements rather than reporting claims about what he said, so they constitute direct evidence of his actual words rather than mere reporting of assertions.",
+      "temporal": "The passages reference statements about January 6, which occurred in January 2021, and the claim was made in October 2022, so the evidence describes the period the claim addresses.",
+      "mismatch": "The claim states Johnson called the rioters 'peaceful protests' while the evidence shows he characterized the event as 'largely peaceful protest' with acknowledgment of 'agitators'\u2014this is not a substantive difference but rather a paraphrase of the same characterization, and the claim's framing of 'making excuses' aligns with Johnson's attribution of violence to agitators rather than the broader group.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The retrieved passages provide direct quotes of Ron Johnson characterizing January 6 as 'largely peaceful protest' and attributing the violence to 'agitators,' which substantively supports both elements of the claim: that he called it peaceful protests and that he made excuses for the rioters by distinguishing agitators from the broader group.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21961": {
+      "echo": "The evidence about pipeline capacity (830,000 bpd) and Russian imports (672,000 bpd total) comes from authoritative sources (alberta.ca, afpm.org) stating facts rather than reporting assertions, so these figures are established as true.",
+      "temporal": "The evidence is temporally appropriate: pipeline capacity figures are structural and stable, and the Russian import data (199,000 crude + 473,000 products = 672,000 bpd in 2021) directly precedes the February 25, 2022 claim date.",
+      "mismatch": "Position 1 argues the claim is misleading because the oil would be Canadian, not Russian, but this is a substantive objection about whether Canadian oil can 'offset' Russian imports in economic/market terms\u2014a legitimate policy distinction that goes beyond mere paraphrase of the mathematical comparison.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "While the mathematical premise is sound (830,000 bpd capacity exceeds 672,000 bpd Russian imports), the claim's assertion that Keystone XL would 'offset what we import from Russia' is substantively misleading. Substituting Canadian crude for Russian crude in U.S. refineries does not directly offset Russian imports in the way the claim suggests\u2014it would merely change the source of supply. The claim conflates supply capacity with actual market offset of Russian energy dependence, which is a material distinction that refutes the claim's core implication.",
+      "sided_with": "direct"
+    },
+    "liarnew-22427": {
+      "echo": "The web evidence from cbs17.com and carolinajournal.com appears to state facts about Beasley's judicial actions rather than merely reporting assertions, though the sources themselves should be verified for reliability.",
+      "temporal": "The evidence describes judicial decisions that occurred before May 13, 2022, making it temporally appropriate for adjudicating a claim made on that date.",
+      "mismatch": "The substantive difference is that the claim attributes actions ('vacated,' 'threw out') to Beasley individually, while the retrieved passage explicitly states 'The entirety of the state Supreme Court actually vacated the death sentence, not Beasley alone, though Beasley wrote the opinion'\u2014this is a material mischaracterization of agency and responsibility.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.75,
+      "reason": "While Beasley did write majority opinions in both cases, the claim's phrasing that she 'vacated' and 'threw out' these decisions misrepresents judicial authority by attributing court actions to an individual justice. The retrieved passage directly contradicts the claim's implication of individual action, establishing that the full court acted, not Beasley alone.",
+      "sided_with": "direct"
+    },
+    "liarnew-23105": {
+      "echo": "The evidence directly states Michels' positions through reporting from news sources (NBC News, Wisconsin Examiner, Politifact) rather than merely reporting campaign assertions, establishing what his actual stated policy was.",
+      "temporal": "The evidence describes Michels' position changes that occurred in September 2022, which is before the October 19, 2022 claim date, making it directly applicable to judging the claim as of that date.",
+      "mismatch": "There is a substantive difference: the claim asserts Michels would 'force her to deliver the baby,' but the evidence establishes that by October 2022, Michels had changed his position to support exceptions for rape and incest, meaning he would allow abortion in such cases rather than force delivery.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "Multiple independent sources confirm that Tim Michels changed his position in September 2022 to support exceptions for rape and incest cases, reversing his two-decade opposition to such exceptions. By October 19, 2022, his stated policy position would allow abortion in rape and incest cases, directly contradicting the claim that he would force a 12-year-old rape victim to deliver the baby.",
+      "sided_with": null
+    },
+    "liarnew-23137": {
+      "echo": "The web evidence reports net worth figures attributed to Carol A Miller from various sources, but these appear to be assertions by those websites rather than direct financial disclosures or verified statements from authoritative sources like official congressional filings.",
+      "temporal": "The web evidence sources do not include dates, making it impossible to confirm whether these net worth estimates were current as of August 25, 2022, or whether they reflect earlier or later valuations.",
+      "mismatch": "Position 1 argues her net worth is in the 'low millions' range not exceeding $16 million, while the highest-confidence web source ($16.6M at conf=0.80) shows a figure exceeding $16 million by approximately $610,000, which is a substantive difference of roughly 4% above the threshold claimed.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.62,
+      "reason": "The highest-confidence web evidence ($16,610,033.50 at confidence 0.80) directly supports the claim that Carol Miller's net worth exceeds $16 million, and the passage evidence of $72M assets minus $30M debts ($42M net) is consistent with this range. However, confidence is moderate due to the lack of temporal verification, the absence of authoritative source documentation, and conflicting estimates from other sources.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22071": {
+      "echo": "The web evidence from wisconsinwatch.org and wpr.org directly states that Evers negotiated a $1.3 billion income tax cut agreement with Republicans, rather than merely reporting an assertion, and the passages confirm 'Evers and Republicans agreed to $1.3 billion in income tax cuts largely targeting the middle class.'",
+      "temporal": "The claim was made on February 23, 2022, and the evidence describes a bipartisan tax cut deal that Evers negotiated with GOP leaders; while some passages reference later events (2023-2025 vetoes), the core evidence about the $1.3 billion agreement is temporally aligned with or prior to the claim date.",
+      "mismatch": "The claim states Evers 'brought Republicans and Democrats together to cut income taxes for the middle class,' and the evidence confirms he negotiated a $1.3 billion income tax cut with Republicans that targeted the middle class, so there is no substantive difference between the claim and the supporting evidence.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "Multiple high-confidence sources (wisconsinwatch.org, wpr.org) directly state that Evers negotiated a $1.3 billion bipartisan income tax cut agreement with Republicans that targeted the middle class, which directly supports the claim. The later vetoes of different Republican tax proposals do not refute the fact that Evers brought the parties together on this specific 2022 deal.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21978": {
+      "echo": "The retrieved passages state facts about Shipley's actions (proposed amendment, voted against raises) rather than merely reporting assertions, though they characterize the amendment's purpose as addressing 'divisive content' which itself reflects how it was framed.",
+      "temporal": "The evidence describes Shipley's 2022 actions and statements, which aligns with the February 10, 2022 claim date, making the temporal alignment appropriate.",
+      "mismatch": "The claim states teachers should not receive raises if they teach 'American history that Republicans don't agree with,' while the evidence specifies 'divisive content' regarding 'sex and race'\u2014this is a substantive narrowing, as not all American history disagreements concern these specific topics.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "While Shipley did propose blocking pay raises for teachers teaching content he deemed divisive, the evidence shows his position was specifically about 'divisive content' on sex and race topics, not broadly about 'American history that Republicans don't agree with.' The claim overgeneralizes his documented position beyond what the evidence supports.",
+      "sided_with": "direct"
+    },
+    "liarnew-22306": {
+      "echo": "The retrieved passages directly state that Gorsuch and Kavanaugh testified under oath that Roe and Casey were 'established precedent,' while the Barrett passage reports what she answered regarding 'super precedent' and that she 'stopped short of calling it settled law'\u2014these are factual statements about testimony, not mere reports of claims.",
+      "temporal": "All evidence describes the Senate confirmation hearings that occurred before May 2, 2022, making it temporally appropriate for adjudicating the claim as of that date.",
+      "mismatch": "The claim requires all three justices to have assured the committee that Roe was 'established precedent,' but the evidence shows Barrett stopped short of calling it settled law, which is a substantive difference in the level of assurance provided.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.82,
+      "reason": "While Gorsuch and Kavanaugh testified that Roe was 'established precedent,' Barrett's testimony differed materially\u2014she stopped short of calling it settled law when questioned about whether it was 'super precedent.' Since the claim requires all three justices to have made this assurance, and Barrett's testimony does not meet that standard, the claim is factually inaccurate as stated.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22586": {
+      "echo": "The web evidence and passages report that various parties (Visit Milwaukee's president, bizjournals.com, peakmetrics.com) asserted or estimated the $200 million figure, rather than establishing it as an objective fact; the PolitiFact rating and expert skepticism represent independent evaluation, not mere repetition of the claim.",
+      "temporal": "The evidence appears to address the 2024 Milwaukee RNC (based on Mayor Cavalier Johnson reference and Milwaukee location), which is after the May 27, 2022 claim date, creating a temporal mismatch if the original claim referred to a different RNC or year.",
+      "mismatch": "The substantive difference is that PolitiFact rated the claim 'Half True' and an expert called it 'wildly exaggerated,' indicating the $200 million figure is contested and overstated rather than a straightforward economic fact, which contradicts presenting it as a definitive infusion.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "While some sources cite $200 million or similar figures, the PolitiFact fact-check rating of 'Half True' and expert characterization of the estimate as 'wildly exaggerated' establish that the claim as stated is disputed and overstated. The evidence shows the figure is contested rather than a reliable statement of economic impact.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21315": {
+      "echo": "The evidence that the Foxconn deal is 'the largest attempted government handout to a foreign company in American history' comes from retrieved passages and web annotations that appear to report characterizations rather than establish objective fact, while Kleefisch's role is supported by multiple sources stating she 'played a key role' and 'negotiated' the deal.",
+      "temporal": "The evidence is temporally appropriate, describing the Foxconn deal negotiated in 2017 and the incentive package structure as it existed as of September 2021.",
+      "mismatch": "Position 1 argues the characterization is 'hyperbolic' and cites comparable deals, but provides no specific evidence of larger packages as of September 2021; the difference between $3-4.1 billion cited is within rounding and does not substantively refute the 'largest' claim without concrete comparative evidence.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "While Kleefisch's key role in the Foxconn deal is well-supported by multiple sources, the characterization of it as 'the largest attempted government handout to a foreign company in American history' is presented in retrieved passages as a reported characterization rather than an established fact. The evidence shows this phrase appears in sources but does not provide independent verification that it was factually the largest such package in U.S. history, making the superlative claim unsupported despite the role component being accurate.",
+      "sided_with": "direct"
+    },
+    "liarnew-23281": {
+      "echo": "The evidence includes direct fact statements from official sources (USA Today, fact-checkers) and passage excerpts describing specific incidents (92 ballots found in Seattle dumpster), not merely reports of assertions.",
+      "temporal": "The critical temporal issue is that multiple passages explicitly state the ballots were found in 2020 (November 3 midterm election), not 2022, while the claim specifically asserts '2022 midterm ballots in trash' made on November 10, 2022.",
+      "mismatch": "The difference is substantive: the claim specifies 2022 midterms, but the evidence describes 2020 incidents. Multiple passages explicitly state 'Claim that photos show 2022 midterm ballots in trash is rated FALSE - pictures date back to 2020' and 'Ninety-two undelivered mail ballots were discovered in a Seattle dumpster ahead of Washington's November 3 midterm election' (2020, not 2022).",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "While ballots were indeed found in trash in Seattle, the evidence overwhelmingly establishes these incidents occurred during the 2020 midterms (November 3, 2020), not the 2022 midterms. Multiple fact-check passages explicitly debunk the claim by identifying the temporal mismatch. The viral images circulating in November 2022 were misidentified as showing 2022 incidents when they actually documented 2020 events.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22036": {
+      "echo": "The retrieved passage reports that Harris 'was asked about gasoline prices and inflation in America, and she tried to defer to President Duda,' which appears to be a direct assertion rather than independent verification of the event's occurrence.",
+      "temporal": "The claim is dated March 13, 2022, and the evidence provided does not include a timestamp indicating when this alleged incident occurred, making it impossible to confirm temporal alignment with the claim date.",
+      "mismatch": "The passage adds 'and inflation in America' to the claim, which only mentions gasoline prices, but this is a minor elaboration rather than a substantive contradiction.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "Position 2 correctly identifies that the only evidence supporting the claim is a single retrieved passage that merely reports an assertion without corroboration from reliable news sources or official records. The echo check reveals this is an unverified claim rather than established fact, and the absence of credible documentation of such an incident on or around March 13, 2022 indicates the claim is fabricated or severely distorted.",
+      "sided_with": "direct"
+    },
+    "liarnew-21624": {
+      "echo": "The evidence does not merely report assertions; it provides factual documentation from Reuters, Newsweek, and fact-checkers describing an actual detention event with specific details about the reason (identification demands, not mask violation).",
+      "temporal": "The evidence describes events from late 2020/early 2021, which is temporally consistent with the claim made on December 14, 2021, and fact-checker verdicts from that period are directly applicable.",
+      "mismatch": "The substantive differences are: (1) the claim refers to 'Santa Claus' (a fictional character) while evidence describes 'a man dressed as Santa Claus' (a real person); (2) the claim states the reason was 'not wearing a mask' while evidence establishes the actual reason was 'refusing to comply with identification demands at an illegal demonstration.'",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "The claim conflates a fictional character with a real protester and misrepresents the reason for detention. While a person dressed as Santa was detained by German police, this occurred for refusing identification at an illegal protest, not for mask violation. Multiple fact-checkers explicitly rated this claim as false, and the web evidence confirms the actual reason for detention was fundamentally different from what the claim asserts.",
+      "sided_with": null
+    },
+    "liarnew-21850": {
+      "echo": "The web evidence appears to state facts about Schmitt sponsoring SB 390 and the cargo hub project rather than merely reporting assertions, though some sources (Breitbart) are opinion-oriented outlets that may be reporting claims rather than establishing facts.",
+      "temporal": "The evidence describes events from 2011-2013 (Aerotropolis initiative and farmland legislation vote), which is prior to the February 7, 2022 claim date, making it temporally appropriate for evaluating what was true then.",
+      "mismatch": "The funding amount shows a discrepancy: the claim states $480 million, but retrieved passages mention both $480 million and $360 million (tax-incentive plan), creating ambiguity about the exact figure, though both are in the same general range and may refer to different components of the same bill.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The evidence establishes that Schmitt sponsored SB 390 (the Aerotropolis bill) with a cargo hub component for airlines owned by the Chinese Communist Party, and that he voted on Missouri farmland foreign ownership legislation in 2013. While the funding figure shows some ambiguity ($360M vs $480M), the core claims about sponsoring the bill and voting on farmland legislation are supported by the web evidence with moderate-to-good confidence levels (0.60-0.75).",
+      "sided_with": "direct"
+    },
+    "liarnew-21800": {
+      "echo": "The $4 trillion figure is directly supported by web evidence (rollcall.com, crfb.org), but the '60 years' qualifier appears only as a report that Heritage.org described BBB as 'largest welfare expansion in U.S history'\u2014not as 'largest in 60 years'\u2014which is an assertion rather than a factual statement.",
+      "temporal": "The evidence is temporally appropriate, dating to 2021-2022 when the claim was made, and the Great Society inception date (1964) correctly establishes that 60 years prior to 2022 would be 1962, before the Great Society programs began.",
+      "mismatch": "There is a substantive mismatch: the claim specifies 'largest expansion in 60 years' but the only comparable characterization in evidence describes it as 'largest in U.S. history'\u2014a much broader temporal frame that contradicts the specific 60-year limitation in the claim.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.72,
+      "reason": "While the $4 trillion cost is well-supported, the critical '60 years' temporal qualifier lacks evidentiary support. The only comparable characterization found describes BBB as the largest welfare expansion in U.S. history, not specifically in 60 years, making the claim's specific temporal framing unsupported or misleading.",
+      "sided_with": null
+    },
+    "liarnew-22341": {
+      "echo": "The web evidence from high-confidence sources (Washington Post, Supreme Court) directly states that Canada, China, Netherlands, North Korea, and Singapore allow abortion on demand at 20 weeks, rather than merely reporting assertions about these policies.",
+      "temporal": "The evidence describes abortion laws as of May 2022 or earlier, which is appropriate for judging a claim made on May 8, 2022, before the Dobbs decision fundamentally altered US abortion law.",
+      "mismatch": "Position 2 argues the claim cannot be verified without knowing which country 'we' refers to, but this is a reasonable interpretive challenge rather than a substantive factual error; the core claim about approximately seven nations allowing abortion on demand at 20 weeks is supported by evidence showing at least 5-8 countries with high confidence (Canada, China, Netherlands, North Korea, Singapore, Iceland, New Zealand, Vietnam).",
+      "verdict": "SUPPORTED",
+      "decided_by": 3,
+      "confidence": 0.78,
+      "reason": "The evidence establishes that multiple countries (at least 5-8 depending on source) do allow abortion on demand at 20 weeks, supporting the approximate claim of 'seven nations.' While sources vary slightly on the exact composition of the list, the core factual assertion is substantiated by high-confidence evidence from authoritative sources. Position 2's objection about not knowing which country 'we' refers to is a limitation on verification rather than a refutation of the underlying fact.",
+      "sided_with": null
+    },
+    "liarnew-22588": {
+      "echo": "Position 1 cites the House Select Committee investigation as confirmation, but the provided evidence does not include any direct statements from that committee\u2014only general assertions that it 'confirmed' the claim, which is reporting an assertion rather than stating the fact directly.",
+      "temporal": "All evidence pertains to January 6, 2021, and the claim is being judged as of June 30, 2022, so the temporal alignment is appropriate.",
+      "mismatch": "The substantive difference is clear: the claim asserts Trump was in a 'presidential limousine' while the retrieved passages explicitly state 'Trump rode in SUV, not limo' and reference 'video from just after Trump's Jan. 6 speech showed he was riding in an SUV, not a limousine'\u2014these are contradictory vehicle types, not mere paraphrasing.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.85,
+      "reason": "Multiple retrieved passages directly contradict the claim by stating Trump rode in an SUV rather than a presidential limousine on January 6, 2021. While Position 1 invokes the House Select Committee, the actual evidence provided supports the SUV account, making the limousine claim substantively inaccurate.",
+      "sided_with": null
+    },
+    "liarnew-22853": {
+      "echo": "The retrieved passages report that '64 members have breached/broken' the STOCK Act and that 'Washington refuses to do anything about it,' but these appear to be assertions from sources rather than independently verified facts, making them evidence of the claim being made rather than proof it is true.",
+      "temporal": "The evidence references the 117th Congress and general STOCK Act provisions, which align with the August 2, 2022 timeframe of the claim, so temporal alignment is satisfied.",
+      "mismatch": "Position 2 argues the claim is 'sensationalized' and lacks 'credible evidence,' but the retrieved passages explicitly state '64 members have breached/broken the STOCK Act' and 'no member has ever been prosecuted,' which directly matches the claim's core assertions without substantive contradiction.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The retrieved passages directly support all essential components: the STOCK Act prohibits insider trading by Congress members, 64 members breached it, members are from both parties, and no prosecutions have occurred. While the evidence appears to report these facts rather than independently verify them, the consistency and specificity of the passages (including the precise figure of 64 and the statement about zero prosecutions) provide sufficient support for the claim as stated on August 2, 2022.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22837": {
+      "echo": "The evidence includes direct CBO passages stating findings about audit rates, not merely reports of assertions, though some passages appear to be quoted claims rather than original CBO analysis.",
+      "temporal": "The evidence is temporally appropriate, with CBO analysis from 2021-2022 regarding IRS funding proposals being evaluated as of August 24, 2022, and historical data from 2010-2018 providing baseline context.",
+      "mismatch": "There is a substantive difference: the claim states audit rates would rise for 'ALL taxpayers' regardless of income, but the evidence explicitly states 'CBO's baseline projections show overall audit rate declines for both higher-income and lower-income taxpayers,' directly contradicting the universal claim while supporting increases only for lower and middle-income taxpayers.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The core claim that audit rates would rise for ALL taxpayers is directly contradicted by CBO evidence showing baseline projections of overall audit rate declines for higher-income taxpayers. While the evidence supports that lower and middle-income taxpayers would see more audits (potentially 710,000 more), this does not support the universal claim made. The second part about innocent taxpayers being audited is partially supported but cannot salvage a refuted primary claim.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22439": {
+      "echo": "The evidence directly states facts about FHP's semi-trucks from authoritative sources (thedrive.com and official FHP communications), not merely reporting assertions made by others.",
+      "temporal": "The evidence describes FHP's semi-truck operations as of the claim date (May 17, 2022) and appears to reflect the current operational status at that time.",
+      "mismatch": "The substantive difference is that the claim characterizes the trucks as 'hidden in plain sight,' but the evidence explicitly states they are 'marked with Florida Highway Patrol markings, as well as red and blue lights'\u2014making them clearly identifiable as law enforcement vehicles, not hidden.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "While FHP does operate three marked semi-trucks for enforcement purposes (supporting the basic fact), the core characterization of these trucks as 'hidden in plain sight' is contradicted by evidence that they are clearly marked with official insignia and emergency lights. The claim's framing misrepresents how these vehicles actually operate.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21698": {
+      "echo": "The retrieved passages appear to state findings from epidemiological studies and public health sources rather than merely reporting assertions, though some sources (like social media or advocacy sites) cannot be verified as authoritative from the metadata provided.",
+      "temporal": "The evidence is temporally appropriate, with passages referencing Delta and Omicron variants that were dominant in January 2022, and the claim was made on that exact date.",
+      "mismatch": "The difference is substantive: the claim presents 17x and 20x as fixed figures, but the evidence shows these are at the upper or middle bounds of ranges that vary significantly by age group (11-55x for mortality, 3.5-17.7x for hospitalization), making the claim's presentation of single numbers misleading about their universal applicability.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.72,
+      "reason": "While the specific numbers 17x and 20x do appear in some sources and fall within documented ranges, the claim presents them as universal figures without acknowledging substantial age-dependent variation (e.g., 23x for 30-year-olds, 55x for older groups, 11-17x for mortality overall). This oversimplification of context-dependent risk ratios constitutes a substantive misrepresentation of the evidence.",
+      "sided_with": null
+    },
+    "liarnew-22438": {
+      "echo": "Position 1 relies on reports that advocacy groups and community members expressed concerns, which establishes that the concern was MADE and REPORTED, not that ICE was actually conducting enforcement in Uvalde.",
+      "temporal": "The evidence from Position 2 (ICE and DHS statements) is contemporaneous with May 2022, directly addressing the situation at the time the claim was made.",
+      "mismatch": "The substantive difference is that the claim asserts ICE 'est\u00e1 en Uvalde' (is conducting enforcement in Uvalde), while the evidence establishes that ICE explicitly stated it was NOT carrying out immigration enforcement there and that the site was a 'protected site.'",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The core factual premise of the claim\u2014that ICE was conducting enforcement in Uvalde\u2014is directly contradicted by official statements from ICE and DHS made at the time. While undocumented immigrants may have had general fears about deportation, the specific claim that ICE presence in Uvalde created this dilemma is refuted by evidence that ICE explicitly was not conducting enforcement there.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21791": {
+      "echo": "The retrieved passage directly states 'Cases among ages 12 to 20 in the U.S.: 4 in 2019, 4 in 2020, and 2,236 in 2021' rather than merely reporting that someone asserted it, appearing to be from an official source.",
+      "temporal": "The evidence describes exactly the period the claim is about (2019, 2020, and 2021), and the claim was made on February 22, 2022, which is after the 2021 data would have been compiled.",
+      "mismatch": "n/a",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The retrieved passage provides a direct textual match to all three numerical claims and demographic specifications. However, the moderate confidence level (0.50) on the web evidence and the lack of explicit CDC publication details in the provided evidence prevent higher confidence. The passage appears to state rather than merely report the figures, supporting the claim as of February 22, 2022.",
+      "sided_with": "direct"
+    },
+    "liarnew-22250": {
+      "echo": "The evidence reports that PolitiFact explicitly rated this claim as False, and retrieval passages state (rather than merely report assertions about) that the White House Gift Shop is a private company that sold the coins, not the federal White House institution.",
+      "temporal": "All evidence is from 2022 or describes events in 2022, matching the claim's date of April 17, 2022.",
+      "mismatch": "The substantive difference is that the claim attributes the action to 'The White House' (implying the federal institution), while the evidence establishes it was the White House Gift Shop, a private commercial entity\u2014a material misrepresentation of the source.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "Although commemorative coins honoring Zelenskyy were indeed sold in 2022, they were sold by the White House Gift Shop, a private company, not presented by The White House as a federal institution. This attribution error is substantive and was explicitly rated False by PolitiFact, making the claim as stated inaccurate.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21694": {
+      "echo": "The web evidence from tri-cityherald.com and youtube.com appears to REPORT actual agenda items from an official meeting rather than merely repeating assertions, as these are sourced to news outlets documenting official government proceedings.",
+      "temporal": "The evidence is temporally aligned with the claim, as it describes a Jan. 12 meeting that would occur on or after January 9, 2022, when the claim was made.",
+      "mismatch": "No substantive mismatch exists; the claim states the board 'will discuss' these items, and the evidence confirms both mandatory COVID-19 quarantines and vaccine requirements are agenda items\u2014discussion is the appropriate characterization of agenda items, and the passage noting 'no action will be taken' does not contradict discussion occurring.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.82,
+      "reason": "The web evidence from credible news sources confirms that a Jan. 12 meeting of Washington State Department of Health will occur with both mandatory COVID-19 quarantines and vaccine requirements for K-12 students as agenda items. The claim's use of 'discuss' accurately describes what happens when items appear on an official meeting agenda, and the fact that no action will be taken does not contradict the discussion occurring.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22203": {
+      "echo": "Position 1 acknowledges the claim uses paraphrased language rather than exact quotes, while Position 2 cites direct web evidence and retrieved passages stating Oz 'disavowed' pro-gun-control columns and 'promises to oppose any gun safety measures,' which are statements of fact rather than mere assertions.",
+      "temporal": "The evidence is temporally appropriate, describing Oz's positions during his 2022 Pennsylvania Senate campaign, which is the exact period the claim addresses (April 4, 2022).",
+      "mismatch": "The difference is substantive: the claim asserts Oz called for gun bans and less access to guns, while the evidence establishes he disavowed pro-gun-control columns and promised to oppose gun safety measures\u2014these are directly contradictory positions, not mere paraphrasing differences.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The web evidence and retrieved passages directly contradict the claim by establishing that Oz disavowed pro-gun-control positions and opposed gun safety measures, which is the opposite of calling for gun bans. Position 1's acknowledgment that the exact phrasing is 'paraphrased' cannot overcome the fundamental factual inversion documented in the evidence.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22066": {
+      "echo": "The passages reporting Johnson's statements (calling Social Security a 'scam,' 'Ponzi scheme,' proposing annual congressional approval) are direct assertions of his positions rather than mere reports of claims made by others, and thus constitute evidence of his actual stated views.",
+      "temporal": "All evidence appears to describe Johnson's positions as of or before March 16, 2022, with no indication of temporal mismatch; the passages reflect his long-standing rhetoric on these programs.",
+      "mismatch": "The substantive difference is whether Johnson supports 'phasing out' these programs versus merely proposing reforms like means-testing or annual discretionary approval\u2014Johnson's actual proposals (annual congressional discretionary spending rather than automatic entitlements) constitute structural elimination of these programs as federal entitlements, which aligns with 'phasing out,' not merely reforming them.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "Johnson has explicitly stated positions to eliminate Social Security and Medicare as federal entitlements through annual congressional discretionary approval, calling Social Security a 'scam' and 'Ponzi scheme.' While he has not endorsed a single specific official Republican plan document, his stated advocacy for eliminating these programs as automatic federal entitlements substantively supports the claim that he supports phasing them out, even if his rhetoric uses different terminology than 'phase out.'",
+      "sided_with": "direct"
+    },
+    "liarnew-23198": {
+      "echo": "The retrieved passage stating DePape 'stripped down to his underwear, grabbed a hammer, and jogged all the way to Nancy Pelosi's house' appears to be an assertion rather than established fact, and the web evidence only confirms DePape was a participant in the attack at that location without detailing his arrival method or clothing.",
+      "temporal": "The evidence is temporally appropriate, describing events from October 28, 2022, which is before the October 31, 2022 claim date.",
+      "mismatch": "There is a substantive difference: the claim specifies DePape arrived at the house in a particular manner (stripped, jogging with hammer), while credible reporting indicates he arrived fully clothed and broke in through a glass door, with the underwear detail relating only to events inside the home during the confrontation.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "Position 1 correctly identifies that while DePape did attack Paul Pelosi at the house with a hammer, the specific claim about his arrival method and state of undress contradicts documented reporting. The retrieved passage appears to be an unsourced assertion rather than established fact, and court documents and news reports from the time indicate he arrived fully clothed.",
+      "sided_with": "direct"
+    },
+    "liarnew-22986": {
+      "echo": "The web evidence reports actual deployment figures (10,000-15,000 troops) from credible sources like BBC, Reuters, and Bloomberg, not mere assertions of the 100,000+ claim; the 100,000 figure appears only as a 'potential' deployment, not as confirmed reporting.",
+      "temporal": "Critical temporal mismatch: the claim was made on September 28, 2022, but the retrieved passages indicate North Korean troops arrived in Russia's Kursk Oblast on October 25, 2024, and were confirmed on April 28, 2025\u2014all well after the claim date, making this evidence inapplicable to judging the claim as of September 2022.",
+      "mismatch": "The difference between 'more than 100,000 troops' and confirmed deployments of 10,000-15,000 is substantive and represents a tenfold exaggeration, not a rounding or paraphrase difference.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "As of September 28, 2022, no credible evidence supports deployment of more than 100,000 North Korean troops to Russia; all contemporary sources report actual deployments in the 10,000-15,000 range, with 100,000 mentioned only as a speculative 'potential' figure. The later 2024-2025 evidence cannot retroactively validate a claim made in 2022 when no such deployment had occurred.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21620": {
+      "echo": "The retrieved passages state actual polling results (54% approval, partisan breakdowns) rather than merely reporting assertions, providing direct factual evidence rather than echoes of the claim.",
+      "temporal": "The evidence describes polling from the period around the claim's December 8, 2021 date, making it temporally appropriate for adjudication.",
+      "mismatch": "The substantive differences are: (1) 54% is a bare majority, not an 'overwhelming majority'\u2014a clear quantitative mismatch; (2) Democrats at 36% support means a majority of one major party opposes it, directly contradicting 'across all political parties'; (3) the 46-point partisan gap (82% vs 36%) demonstrates clear partisan division, not cross-party consensus.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "The claim uses 'overwhelming majority' but evidence shows only 54% support. More critically, the claim asserts support 'across all political parties,' but Democrats oppose voter ID 55-36%, meaning a majority of one major party opposes it. These are substantive contradictions between the claim's language and the polling data.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22313": {
+      "echo": "The retrieved passages directly state factual information about the 1970 vote (e.g., '13 Republican state senators voted in favor'), not merely reporting assertions made by others.",
+      "temporal": "The evidence describes the 1970 New York abortion legalization vote, which is exactly the period and event the claim addresses, so temporal alignment is proper.",
+      "mismatch": "The claim states 12 Republican senators voted in favor, but the retrieved passage explicitly states 13 Republican state senators voted in favor\u2014a substantive difference of one vote in a specific factual claim.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "The retrieved passage directly contradicts the claim by stating that 13 (not 12) Republican state senators voted in favor of the 1970 New York abortion legalization bill. This is a factual discrepancy in a specific numerical claim, not a matter of rounding or vague quantification.",
+      "sided_with": null
+    },
+    "liarnew-21966": {
+      "echo": "The passages reporting that Johnson 'received contributions from companies that outsourced,' 'publicly praised outsourcing,' 'defended a company that moved jobs to China,' and 'voted for the GOP tax bill' state facts rather than merely report assertions, though the passage stating the claim was 'debunked by PolitiFact' is itself a report of someone's verdict.",
+      "temporal": "The evidence describes Johnson's actions and positions from 2010 onward through 2022, which covers the period relevant to the claim made on January 7, 2022, and includes his 2017 tax law involvement and votes on recent legislation.",
+      "mismatch": "Position 1 argues Johnson's stated positions are critical of China, but the evidence shows he voted for tax legislation that rewarded outsourcing, received contributions from outsourcing companies, and publicly praised outsourcing\u2014these are substantive differences between stated anti-outsourcing rhetoric and actual legislative/financial support for outsourcing.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "The evidence establishes that Johnson voted for the GOP tax bill which provided tax breaks for companies that outsource jobs, received substantial contributions from outsourcing companies, and publicly praised outsourcing\u2014actions that substantively 'reward' such companies regardless of his stated positions. While one passage mentions PolitiFact debunked the claim, that is merely a report of someone else's verdict and does not override the factual evidence of his votes, contributions received, and public statements.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-22451": {
+      "echo": "The web evidence passages directly state factual outcomes (52 votes in favor, 48 against, needed 60 to pass, 9 Democrats voted for it, Senate under Democratic control) rather than merely reporting assertions, establishing these as documented facts.",
+      "temporal": "All evidence describes 2013, the exact period the claim addresses, so temporal alignment is satisfied.",
+      "mismatch": "Position 2 argues the claim conflates different events and references the Manchin-Toomey background check amendment (54-46 vote in April 2013), but the retrieved passages explicitly confirm a Grassley-Cruz amendment received 52 votes in 2013\u2014these are distinct legislative items, not a conflation, and the Grassley-Cruz amendment is the correct subject of the claim.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The retrieved passages confirm all material elements of the claim: a Grassley-Cruz gun amendment in 2013 received 52 votes (a simple majority), needed 60 to pass (indicating filibuster), with 9 Democrats supporting it despite their party's majority control. Position 2's argument that the claim conflates events is undermined by the explicit confirmation of the Grassley-Cruz amendment as a distinct legislative item with the vote totals claimed.",
+      "sided_with": "wkgfc"
+    },
+    "liarnew-21404": {
+      "echo": "The passages retrieved appear to be direct statements about Wisconsin abortion restrictions and Scott Walker's actions, not merely reports of someone's assertion, though some passages explicitly note the lack of direct evidence of Kleefisch's involvement.",
+      "temporal": "The evidence describes the 2011-2019 period when Kleefisch was Lieutenant Governor under Walker, which matches the temporal scope of the claim made on September 28, 2021.",
+      "mismatch": "The substantive differences are: (1) only Scott Walker as Governor could legally sign legislation, not Kleefisch as Lieutenant Governor; (2) evidence confirms Walker signed a 20-week ban but provides no direct evidence of Kleefisch's role in signing or authoring restrictions; (3) evidence references twelve anti-women's health measures, not five specific abortion restrictions; (4) the claim's phrasing 'worked with Scott Walker to sign' misrepresents Kleefisch's constitutional inability to sign legislation.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "While Wisconsin did pass abortion restrictions under Walker that threatened doctors with prison time, the claim fundamentally misrepresents Kleefisch's role by stating she 'worked with Scott Walker to sign' laws into effect. As Lieutenant Governor, Kleefisch could not sign legislation; only the Governor can. Evidence confirms Walker signed restrictions but provides no direct evidence of Kleefisch's authorship or signing role, and the specific number 'five' is unsupported (evidence references twelve measures). The claim conflates potential advocacy or support with the legal act of signing legislation.",
+      "sided_with": "wkgfc"
+    }
+  }
+}

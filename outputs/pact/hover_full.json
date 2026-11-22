@@ -1,0 +1,774 @@
+{
+  "dataset": "hover",
+  "n": 198,
+  "disputed": 74,
+  "provenance": true,
+  "temporal": false,
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "balanced_accuracy": {
+    "direct": 60.61,
+    "wkgfc": 67.68,
+    "pact": 68.69,
+    "oracle": 82.83
+  },
+  "tribunal_right_on_disputed": 46,
+  "sided_with": {
+    "direct": 12,
+    "wkgfc": 50,
+    "unstated": 12
+  },
+  "parse_failures": 0,
+  "mcnemar_vs_wkgfc": {
+    "b": 7,
+    "c": 9,
+    "p": 0.8025873486341526
+  },
+  "mcnemar_vs_direct": {
+    "b": 21,
+    "c": 37,
+    "p": 0.04888463391618113
+  },
+  "seconds": 120.2,
+  "rulings": {
+    "hover-48a89832-b607-4562-a90d-ce964b2ba59e": {
+      "echo": "The retrieved passages directly state facts about Apple TV (e.g., 'small network appliance', 'connects to television', 'supports playback') rather than merely reporting assertions, so they constitute genuine evidence of the claim's accuracy.",
+      "temporal": "The evidence describes Apple TV's characteristics across its product lifecycle from 2007 onward; the claim appears to be a general description of the device's nature rather than time-specific, so temporal consistency is not a concern.",
+      "mismatch": "Position 2 conflates two distinct products: Apple TV (the hardware device) with Apple TV+ (the streaming service). The KG evidence showing 'operating system -> Windows/macOS/ChromeOS' refers to Apple TV+ software availability, not the Apple TV hardware device itself. The substantive difference is that the claim correctly describes the hardware device's primary function, while Position 2 incorrectly attributes characteristics of the streaming service to the hardware device.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.82,
+      "reason": "The claim accurately describes Apple TV as a small network appliance and entertainment device that functions as a media player for iTunes Store content. Multiple passages confirm these core facts. Position 2's refutation conflates Apple TV hardware with Apple TV+ streaming service and misinterprets KG data about software platforms as evidence against the hardware device's classification.",
+      "sided_with": "direct"
+    },
+    "hover-da34d6fc-5b7a-47bd-b794-809a8a611f0c": {
+      "echo": "The web evidence from themoviedb.org, moviefone.com, koreanfilm.org, and Wikipedia directly states facts about the films and their cast/release dates rather than reporting assertions, making this reliable evidence of the underlying facts.",
+      "temporal": "All evidence is temporally appropriate: Cherry Tomato's 2008 release date and Lady Daddy's January 14, 2010 release date are both from the relevant period, and the claim makes no temporal claims that would be contradicted by later changes.",
+      "mismatch": "Position 1 claims Lady Daddy stars 'one of the stars of Cherry Tomato,' and the evidence shows Lady Daddy stars Lee Na-young and Kim Ji-seok while Cherry Tomato's cast includes Shin Goo, Kim Hyang-gi, Kim Young-ho, Choi Ji-yeon, Choi Dong-gyoon, and Kim Byung-chun\u2014there is no documented overlap between these cast lists, which is a substantive mismatch.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.85,
+      "reason": "While Lady Daddy is confirmed as a South Korean film released on January 14, 2010, the critical requirement that it stars 'one of the stars of Cherry Tomato' cannot be verified. The available evidence shows no cast member overlap between Lady Daddy (Lee Na-young, Kim Ji-seok) and Cherry Tomato's documented cast, making the core claim unsubstantiated.",
+      "sided_with": null
+    },
+    "hover-fa2bc99a-d914-4ac2-833b-41dec97ab2ac": {
+      "echo": "The evidence directly states facts from reliable sources (Wikipedia, IMDb, retrieved passages) rather than merely reporting assertions, so the echo check does not disqualify this evidence.",
+      "temporal": "All evidence is contemporary to or describes the 1949 film Floodtide, so the temporal check is satisfied.",
+      "mismatch": "The claim asserts John Laurie was 'director and star' of Floodtide, but evidence substantively shows Frederick Wilson directed it and Gordon Jackson and Rona Anderson were the stars, with John Laurie as a supporting cast member\u2014this is a material factual difference, not mere paraphrase or rounding.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "While the birth date of 25 March 1897 is correct, the claim that John Laurie was the 'director and star' of Floodtide is factually incorrect. Multiple reliable sources confirm Frederick Wilson directed the film and Gordon Jackson and Rona Anderson were the stars, with John Laurie appearing as a supporting cast member playing Joe Drummond.",
+      "sided_with": "wkgfc"
+    },
+    "hover-f13af017-e83b-4059-8135-b2a7165d6bdd": {
+      "echo": "The web evidence directly states facts (Sam Taylor died 1958-03-06, Howard Hawks died 1977-12-26) rather than reporting assertions, so this passes the echo check.",
+      "temporal": "All evidence is current and describes the actual death dates of both directors, which are historical facts not subject to temporal change.",
+      "mismatch": "Position 1 claims Sam Taylor died in 1944, but web evidence states he died in 1958; this is a substantive 14-year discrepancy that directly contradicts Position 1's core factual claim.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "Position 2 is supported by high-confidence web evidence (0.95) showing Sam Taylor died on 1958-03-06 and Howard Hawks died on 1977-12-26, confirming the claim. Position 1 contains a critical factual error, stating Taylor died in 1944 when evidence shows 1958, which undermines its refutation.",
+      "sided_with": "wkgfc"
+    },
+    "hover-0b9c0cbe-7adc-4945-88b0-64650c9ee2e0": {
+      "echo": "The evidence directly states facts about Catterline's classification and Joan Eardley's work there, rather than merely reporting assertions.",
+      "temporal": "The evidence is current and describes Catterline's present classification; Joan Eardley's work there (early 1950s onward) is historically documented and relevant to the claim.",
+      "mismatch": "The claim characterizes Catterline as 'a mining village,' but all retrieved passages consistently describe it as a 'fishing village' or 'former fishing village'\u2014this is a substantive factual contradiction, not a paraphrase or minor difference.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.95,
+      "reason": "Multiple independent sources unanimously describe Catterline as a fishing village, not a mining village. This directly contradicts an explicit claim in the statement. While other elements (Joan Eardley's work, Cowie Castle's existence in Scotland, Catterline's location) are accurate, the mining village characterization is factually incorrect and constitutes a material error.",
+      "sided_with": null
+    },
+    "hover-3956cce6-1366-46f7-8c2c-94ffbc60a17a": {
+      "echo": "The web evidence and passages appear to state facts about historical records rather than merely reporting assertions, though they come from secondary sources (Wikipedia, Wikiwand) that themselves synthesize primary historical documentation.",
+      "temporal": "All evidence pertains to the same ancient Mesopotamian period (Akkadian/Ebla era, circa 2321 BCE based on Ibrium's death date), so temporal consistency is not an issue.",
+      "mismatch": "There is a substantive mismatch: the claim states Ibrium succeeded someone who served 17 years, but the KG evidence shows 'Ibrium -- replaced by -> Ibbi-Sipish' (indicating Ibrium was replaced BY Ibbi-Sipish, not that Ibrium replaced him), and the passages state Ibrium himself served 20 years, not that he succeeded a 17-year vizier.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.75,
+      "reason": "While Ibrium was indeed a vizier under Isar-Damu/Ishar-Damu, the evidence indicates Ibrium served 20 years himself and was replaced by Ibbi-Sipish (not the reverse). The KG triple showing 'Ibrium replaced by Ibbi-Sipish' directly contradicts the claim's succession order, and the passages confirm Ibrium's own tenure was 20 years, not a succession after a 17-year predecessor.",
+      "sided_with": null
+    },
+    "hover-98e23619-2d94-4efd-b33e-fbbd02d5f669": {
+      "echo": "The web evidence directly states facts (Hanover Hound imported to France with 0.95 confidence from Wikipedia; Toy Trawler Spaniel origin from Facebook with 0.60 confidence), while the retrieved passages provide substantive information rather than mere assertions.",
+      "temporal": "The evidence is temporally appropriate, with the passage noting the Hanover Hound was 'first introduced into France in the 1980s,' establishing a historical fact relevant to the claim.",
+      "mismatch": "The claim states both breeds were NOT imported to France, but the evidence establishes that the Hanover Hound WAS imported to France (Wikipedia 0.95 confidence + passage confirmation), which is a substantive contradiction of the claim.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The claim is refuted because reliable evidence (Wikipedia at 0.95 confidence plus a retrieved passage) establishes that the Hanover Hound was imported to France in the 1980s. This directly contradicts the claim that both breeds were NOT imported to France. While the Toy Trawler Spaniel's status remains unclear, the refutation of the 'both' requirement is sufficient to refute the overall claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-18e2012b-fc9a-456a-bbc3-2e677eeae54d": {
+      "echo": "The evidence STATES that Nickelodeon Africa reaches 1.5 million households across 49 countries in Africa, rather than merely reporting an assertion.",
+      "temporal": "The evidence does not specify when the 1.5 million household figure was measured, so temporal alignment cannot be definitively assessed, though the figure appears to be current information.",
+      "mismatch": "The substantive mismatch is that the claim references a specific show with 52 episodes split between 'Nickelodeon and Ethos Sagas,' but no such show is identified or verified in any evidence; the evidence only confirms Nickelodeon Africa's reach, not the existence or episode count of the claimed show.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "While the evidence confirms that Nickelodeon Africa reaches 1.5 million households in South Africa, the claim's core assertion\u2014that a specific show with 52 episodes split between Nickelodeon and 'Ethos Sagas' exists\u2014cannot be verified. 'Ethos Sagas' appears to be a non-existent production entity, and no show matching this description is found in the evidence. The household reach figure alone does not substantiate a claim about a non-verifiable show.",
+      "sided_with": "direct"
+    },
+    "hover-857324d9-b352-44c1-96bf-f28b7c72712b": {
+      "echo": "The passages retrieved report that Frank Chadwick is 'described as' and 'New York Times Best Selling author' rather than stating these as verified facts, and the web evidence about NYT authorship only confirms he 'has written for The New York Times' (a contributor), not that he is a bestselling author.",
+      "temporal": "The evidence is temporally consistent with the claim, as A House Divided was published in 1981 and the SFC Press Designer Edition appears to be a later reprint of the same game.",
+      "mismatch": "Position 1 claims Mark Herman designed the game and GMT Games published it, while Position 2 identifies Frank Chadwick as designer with SFC Press as publisher\u2014this is a substantive difference in both designer identity and publisher, though web evidence (conf 0.85) supports Chadwick/SFC Press over the Mark Herman/GMT Games assertion.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "Web evidence with high confidence (0.85) establishes Frank Chadwick as creator of A House Divided published by SFC Press, and confirms he is an award-winning game designer. However, the claim that he is a 'New York Times best selling author' is only supported by passages that report this assertion rather than verify it independently; the web evidence only confirms he has written for the NYT, not that he achieved bestseller status. The core claim about designer, awards, and publisher is substantively supported despite the author claim being weakly evidenced.",
+      "sided_with": "wkgfc"
+    },
+    "hover-fa98216a-22c4-4318-8724-9e2480d348ba": {
+      "echo": "The evidence directly states facts from Wikipedia and Wikidata rather than reporting assertions, so the echo check does not reveal a failure mode here.",
+      "temporal": "The evidence describes the historical period when the Louisville Thunder played, and Freedom Hall's status as a venue and structure is not time-dependent in a way that would affect this claim.",
+      "mismatch": "There is a substantive conflict: web evidence indicates Louisville Thunder played at Freedom Hall (confidence 0.95), but knowledge-graph evidence indicates Broadbent Arena was the occupant of Louisville Thunder, creating a direct contradiction about the home venue.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.65,
+      "reason": "The evidence contains a direct contradiction about the Louisville Thunder's home venue: web sources state Freedom Hall with high confidence (0.95), while Wikidata states Broadbent Arena. Additionally, neither venue is explicitly identified as a 'landmark' of Louisville in the available evidence\u2014Freedom Hall is described as an arena and built structure, but the term 'landmark' is not established for either venue. The claim cannot be supported given this evidentiary conflict and the absence of explicit landmark designation.",
+      "sided_with": "wkgfc"
+    },
+    "hover-684a22ae-0a68-476f-8e82-75b63dc29d81": {
+      "echo": "The web evidence reporting Tamzin Outhwaite's connection to these roles states facts rather than merely reporting assertions, as these are verifiable casting/performance records from reliable sources like BBC and IMDb.",
+      "temporal": "The evidence is temporally appropriate, covering the periods when these TV roles were performed (EastEnders 2000-2002, Paradox 2009-2010, Inside No. 9 ongoing).",
+      "mismatch": "There is a substantive mismatch: the claim states the actress played 'Lizzie Mickery' in Inside No. 9, but the retrieved passage explicitly states she played 'Connie' in the Empty Orchestra episode, and Lizzie Mickery is identified as a screenwriter/creator of Paradox, not a character name.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.85,
+      "reason": "While Tamzin Outhwaite did play Rebecca Flint in Paradox and Mel Owen in EastEnders (supporting the chronological claim), the specific character name 'Lizzie Mickery' in Inside No. 9 is factually incorrect\u2014she played 'Connie' instead. This substantive error in the character name refutes the claim as stated.",
+      "sided_with": null
+    },
+    "hover-63ad0e84-2d6b-46a0-ae20-21b95065c109": {
+      "echo": "The web evidence from events.musicofourdesire.com reports assertions about the song, performer, composers, and competition win rather than independently stating these facts, making it difficult to distinguish between reported claims and verified facts.",
+      "temporal": "The evidence is temporally consistent with the claim, as Aurela Ga\u00e7e's Eurovision participation in 2011 and her multiple Festivali i K\u00ebng\u00ebs wins align with a plausible timeframe for this song.",
+      "mismatch": "The claim specifies that the female singer won 'a major Albanian musical event hosted by Palace of Congresses,' and the evidence confirms Aurela Ga\u00e7e won Festivali i K\u00ebng\u00ebs (a major event) at that venue\u2014this is substantively aligned, not a mismatch.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.78,
+      "reason": "The web evidence corroborates all key claim components: Aurela Ga\u00e7e as female performer of 'Feel the Passion,' her win at Festivali i K\u00ebng\u00ebs held at Palace of Congresses, and the composer/lyricist credits. However, confidence is moderate (0.78 rather than higher) because all web evidence carries only 0.70 confidence and derives from a single source (events.musicofourdesire.com), and the Wikidata knowledge graph does not independently verify the composer and lyricist attributions.",
+      "sided_with": "wkgfc"
+    },
+    "hover-38f9adb1-b961-4723-82ab-993ebdf76a0c": {
+      "echo": "Position 2 cites web annotations and coordinate-based calculations that directly state facts rather than merely reporting assertions, providing independent verification of the distance claim.",
+      "temporal": "All evidence is current and describes the present administrative and geographic configuration, with no temporal inconsistencies identified.",
+      "mismatch": "Position 1 claims Sihali Kalan is in Sikrai tehsil, Dausa district (55-65 km away), while Position 2 and the web evidence establish it is in Mundawar tehsil, Alwar district (approximately 140 km away)\u2014this is a substantive geographic mismatch, not a rounding difference.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The web evidence from bharatpedia and Wikidata coordinates consistently place Sihali Kalan in Alwar district, not Dausa district. The coordinate-based distance calculation (76.612, 27.927 to 75.82, 26.915) yields approximately 142.6 km, which matches the claim's 140 km specification. Position 1's claim about Sikrai tehsil in Dausa district appears to reference a different location entirely.",
+      "sided_with": "wkgfc"
+    },
+    "hover-910fe7d3-3910-4334-8a4d-05ac86ce87d3": {
+      "echo": "The web evidence directly states facts (Love Has Come for You is bluegrass, Peter Asher produced it, Peter Asher was born in 1944, the album inspired Bright Star) rather than merely reporting assertions, though some sources have moderate confidence levels.",
+      "temporal": "All evidence is current and describes the relevant period (the 2013 album and its relationship to Bright Star); there are no temporal mismatches.",
+      "mismatch": "Position 1 conflates the claim with a different inspiration narrative (Louvin Brothers), but the claim specifically concerns 'Love Has Come for You' produced by Peter Asher, which is a distinct bluegrass album from 2013 with no substantive contradiction in the evidence.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.78,
+      "reason": "The web evidence confirms all four components of the claim: Love Has Come for You is a bluegrass album (0.90 confidence), Peter Asher produced it (0.70 confidence), Peter Asher was born in 1944 (0.70 confidence), and the album inspired Bright Star (0.90 confidence). Position 1 incorrectly addresses a different inspiration source (Louvin Brothers) rather than refuting the specific claim about this 2013 album.",
+      "sided_with": "direct"
+    },
+    "hover-d70cd64d-8a1c-4f68-aae7-0c2b061f094d": {
+      "echo": "The evidence comes from Wikipedia and knowledge graphs (Wikidata) which state facts rather than merely report assertions, so the echo check passes.",
+      "temporal": "The knowledge graph shows the Red Butte Creek oil spill occurred on 2010-06-01, while Position 1 claims it occurred in 1981\u2014a significant temporal discrepancy that affects the factual accuracy of the underlying claim being checked.",
+      "mismatch": "Position 1 argues that Chevron is not 'the' successor company to Standard Oil as a whole, but the evidence shows Chevron Corporation replaces Standard Oil Company of California, which itself is a child organization of Standard Oil, making Chevron a legitimate successor entity in the organizational lineage.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "The evidence establishes that Chevron Corporation owns/operates the pipeline involved in the Red Butte Creek spill and is a successor to Standard Oil through Standard Oil Company of California. While the succession is indirect rather than direct, Chevron is factually a successor organization to Standard Oil. Position 1's objection that Chevron is not 'the' sole successor is a semantic quibble that does not substantively refute the claim's core assertion.",
+      "sided_with": "wkgfc"
+    },
+    "hover-1f3ad5b7-a3c8-4864-833a-8890904fd9af": {
+      "echo": "The passage 'Managing Director is the son of an insurance advisor in life insurance' appears in the retrieved passages without attribution to a source, making it unclear whether this is a factual statement or merely an assertion being reported.",
+      "temporal": "The evidence describes the Rajdoot Excel-T during its manufacturing period (1983-1989), which is appropriate for evaluating claims about the vehicle and its management.",
+      "mismatch": "n/a",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "While the first two components of the claim (made in India, three gears) are verified by reliable sources (Wikipedia), the third component about the Managing Director lacks credible sourcing. The passage retrieved appears to be an unsourced assertion rather than verified fact, and Position 1 correctly notes there is no credible evidence for this biographical claim. The echo check reveals the problematic nature of relying on an unattributed passage as evidence of truth rather than mere assertion.",
+      "sided_with": "direct"
+    },
+    "hover-01a5fdc4-0f1e-48fb-96be-b0a4700267ad": {
+      "echo": "The evidence directly states facts from authoritative sources (Wikipedia, Wikidata, passages) rather than reporting assertions, establishing that Edward James Olmos co-founded the Latino Book Awards, is an actor, and appeared in Battlestar Galactica, and that Brenda McDonald was a cast member of Battlestar Galactica.",
+      "temporal": "The evidence is temporally appropriate, with the Latino Book Awards founded in 1997 and Battlestar Galactica running 2003-2009, establishing the facts as they existed when the claim was made.",
+      "mismatch": "Position 2's objection that 'this series' is unspecified is not substantive; the claim's reference to 'this series' is a contextual placeholder that is satisfied by the evidence identifying Battlestar Galactica as the series in question, which contains all the specified elements.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "The evidence establishes all components of the claim: Edward James Olmos is an actor and co-founder of the Latino Book Awards (both confidence 0.95), he was a cast member of Battlestar Galactica (confidence 0.70-0.80), and Brenda McDonald was also a cast member of that series (confidence 0.85). Position 2's objection about the unspecified series is resolved by the contextual evidence identifying Battlestar Galactica.",
+      "sided_with": "wkgfc"
+    },
+    "hover-53d05b41-dbaf-43a2-98fb-800b58b58203": {
+      "echo": "The web evidence directly states facts (Jean Parker is Robert Lowery Hanks' mother, Little Women is an MGM film, the actresses appeared in it, Charles F. Miller appeared in Little Women) rather than merely reporting assertions, so the echo check does not disqualify this evidence.",
+      "temporal": "The evidence describes Little Women (1933) and Charles F. Miller's involvement in it, which is the correct historical period for the claim, so temporal consistency is satisfied.",
+      "mismatch": "Position 2 argues Charles F. Miller was a director not an actor, but the evidence clearly shows he was a cast member (uncredited minister) in Little Women, not the director (George Cukor was); this is a substantive factual error in Position 2's reasoning that undermines its refutation.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.82,
+      "reason": "The evidence establishes all components: Jean Parker (Robert Lowery Hanks' mother) appeared in Little Women (1933), an MGM film, alongside Katharine Hepburn and Joan Bennett; Charles F. Miller's film debut was Little Women where he appeared as an uncredited minister. Position 2's core objection\u2014that Miller was a director\u2014is factually incorrect; he was a cast member.",
+      "sided_with": "wkgfc"
+    },
+    "hover-397dc182-37b4-4295-92e6-94888814d0c8": {
+      "echo": "The web evidence directly states facts about Vermeer and The Music Lesson from authoritative sources (essentialvermeer.com), not mere assertions or reports of claims.",
+      "temporal": "The evidence describes the actual period of creation (1662-1664) and Vermeer's lifetime (1632-1675), which directly contradicts the claim's assertion of 1807, a period 132 years after Vermeer's death.",
+      "mismatch": "The date discrepancy is substantive and not trivial: claiming a painting was created in 1807 when it was actually created in 1662-1664 is a 145-year error that is factually material and cannot be explained by rounding or paraphrase.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "While the artist identification and descriptive details about Vermeer are correct, the claim explicitly states the painting was created 'in 1807,' which is factually impossible given Vermeer died in 1675. This is a substantive factual error that refutes the core claim as stated, despite the artist description being accurate.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ac02c8dd-adef-4b26-b8df-a10e5a476f39": {
+      "echo": "The web evidence directly states facts (birth dates, album releases, song dedications) rather than merely reporting assertions, making it reliable evidence of truth.",
+      "temporal": "All evidence is current and describes the relevant historical periods; birth dates and album releases are fixed facts not subject to temporal change.",
+      "mismatch": "Position 1 claims Lowell George was born in 1943, but web evidence states 1945-04-13, which is a substantive factual error in Position 1's reasoning that undermines its refutation.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "The web evidence confirms all three components of the claim: Ian Hunter (1939-06-03) was born before Lowell George (1945-04-13), Lowell George was a member of Little Feat which released Dixie Chicken, and 'Ride Like the Wind' was dedicated to Lowell George. Position 1's refutation is based on an incorrect birth year for Lowell George (1943 vs. the correct 1945), which invalidates its core argument.",
+      "sided_with": "direct"
+    },
+    "hover-4e1f109a-336f-49d2-984c-27ad8b2c70cc": {
+      "echo": "The passage 'Ted Kennedy helped dedicate a new office on St. Patrick's Day in 1988 to his maternal grandfather' appears to be a direct assertion rather than evidence of verification, and its source is not identified as a reliable historical record.",
+      "temporal": "The evidence about John F. Fitzgerald's positions (mayor, congressman) describes his historical roles and does not contradict a 1988 dedication event, so temporal consistency is not an issue.",
+      "mismatch": "Position 2 identifies a substantive difference: the claim asserts Fitzgerald was a 'leader of the Royal Rooters,' but evidence shows he was a 'founder' (confidence 0.60) and primarily known as Mayor of Boston and U.S. Congressman, not as a Royal Rooters leader; this is a meaningful distinction about his primary identity and role.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.72,
+      "reason": "While Ted Kennedy's maternal grandfather was definitively John F. Fitzgerald (high confidence), the characterization of Fitzgerald as a 'leader of the Royal Rooters' is not adequately supported. The web evidence shows only a 0.60 confidence that he 'founded' the Royal Rooters, and reliable sources consistently identify him primarily as Mayor of Boston and U.S. Congressman. The specific 1988 dedication ceremony cannot be verified through the available evidence. The claim's core assertion about Fitzgerald's role is not substantiated.",
+      "sided_with": null
+    },
+    "hover-007a78fb-6dd5-4da8-a9f7-702bd8702046": {
+      "echo": "The web evidence from Wikipedia and Tatler directly states facts about Princess Zein bint Hussein's kinship relations and Muna Al-Hussein's British birthplace, rather than merely reporting assertions.",
+      "temporal": "All evidence is current and describes the same individuals across time; Princess Zein bint Hussein's family relationships and her grandmother Muna Al-Hussein's birthplace are permanent facts not subject to temporal change.",
+      "mismatch": "The substantive issue is that the claim's first clause 'is related to Princess Zein' is either self-referential or ambiguous, but the evidence clearly establishes Princess Zein bint Hussein exists and has documented royal family kinships, making the claim's core factual elements verifiable despite awkward phrasing.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The evidence establishes both key factual components: Princess Zein bint Hussein is documented as related to multiple royal family members (Aisha, Abdullah II, King Hussein, and Muna Al-Hussein per high-confidence sources), and Muna Al-Hussein (her grandmother) was British-born in Suffolk. While the claim's phrasing is awkwardly constructed, the underlying facts are supported by reliable sources.",
+      "sided_with": "direct"
+    },
+    "hover-3d6a9ffb-e697-4811-b2f7-8abe91404a52": {
+      "echo": "The web evidence and passages directly state facts about screenwriting credits and directorial roles rather than merely reporting assertions, establishing a reliable factual basis.",
+      "temporal": "All evidence pertains to films released between 2008-2019, matching the temporal scope of the claim with no temporal inconsistencies.",
+      "mismatch": "Position 2 identifies a substantive mismatch: the claim refers to 'the other writer' of Ant-Man directing The Kid Who Would Be King, but this creates ambiguity about whether 'the other writer' refers to a Step Brothers writer or an Ant-Man writer. The evidence confirms Joe Cornish (Ant-Man writer) directed the film, but the claim's phrasing conflates two separate writing teams, making the logical connection unclear and potentially misleading.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.72,
+      "reason": "While the first two claims are factually supported (McKay co-wrote Ant-Man and Step Brothers), the third claim contains a substantive structural flaw: it ambiguously refers to 'the other writer' without clearly establishing whether this means another Ant-Man writer or another Step Brothers writer. The evidence confirms Joe Cornish (an Ant-Man writer, not a Step Brothers writer) directed The Kid Who Would Be King, but the claim's phrasing creates a misleading conflation of the two writing teams that undermines the logical coherence of the overall statement.",
+      "sided_with": null
+    },
+    "hover-fafc352a-39de-48b4-bb34-a23646b2089e": {
+      "echo": "The web evidence from ideas.fandom.com reports assertions about Juno Temple's filmography rather than stating definitive facts, while the knowledge graph evidence from Wikidata provides authoritative structured data that directly states cast memberships.",
+      "temporal": "All evidence is current and describes the same films regardless of when they were released, so temporal considerations do not apply here.",
+      "mismatch": "Position 2 claims Juno Temple did not appear in Atonement or The Dark Knight Rises, but the web evidence (confidence 0.85) and the specific evidence about Juno Temple playing Lola Quincey (confidence 0.98) directly contradict this; the passages retrieved confirm Lola Quincey is a character in Atonement, and Juno Temple is identified as the performer of this role.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.82,
+      "reason": "The web evidence consistently confirms all seven films listed in the claim, including Atonement and The Dark Knight Rises. The high-confidence evidence (0.98) that Juno Temple played Lola Quincey, combined with retrieved passages identifying Lola Quincey as a character in Atonement, directly refutes Position 2's claim that she was not in Atonement. While the fandom source is not authoritative, the convergence of multiple sources and the specific character identification provide sufficient support for the claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-3eef260a-a806-447e-bee1-9c2a7daf246d": {
+      "echo": "All evidence consists of factual taxonomic data from reliable sources (Wikidata, scientific databases, botanical references) stating actual family classifications, not assertions or claims about them.",
+      "temporal": "Taxonomic classifications are stable and timeless; there is no temporal dimension that would affect the validity of these botanical facts.",
+      "mismatch": "Position 1 misreads the claim's logical structure. The claim states 'hemlock and Costus are NOT both in a particular family' AND 'Anise IS in this family.' Position 1 interprets this as claiming hemlock and anise are not in the same family, but the claim actually asserts hemlock and Costus are not in the same family\u2014which is true (Apiaceae \u2260 Costaceae).",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.98,
+      "reason": "The evidence establishes that oenanthotoxin comes from Oenanthe (Apiaceae), Costus belongs to Costaceae, and Anise belongs to Apiaceae. The claim correctly states that the hemlock and Costus are not both in the same family, while Anise is in the hemlock's family. Position 1 commits a logical error in parsing the claim's structure.",
+      "sided_with": "wkgfc"
+    },
+    "hover-170f793e-3692-46ee-9187-60ce4dd568d8": {
+      "echo": "The evidence directly states facts about band membership from Wikipedia, Genius, Last.fm, and Facebook sources rather than reporting assertions, and the passage explicitly states A Silent Film is 'a quartet' and was 'originally a five-piece.'",
+      "temporal": "The evidence appears current and does not indicate membership changes that would affect the comparison, though The Frames' membership may have evolved since 1990.",
+      "mismatch": "Position 1 incorrectly identifies Sand & Snow as a Bon Iver album when the evidence clearly establishes it as an A Silent Film album; this is a substantive error that undermines the refutation.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.82,
+      "reason": "The evidence definitively establishes that A Silent Film released Sand & Snow and currently has 4 members, while The Frames has at least 7 identified members across multiple sources. Position 1's identification of the wrong artist (Bon Iver instead of A Silent Film) is a critical factual error that invalidates its refutation.",
+      "sided_with": "wkgfc"
+    },
+    "hover-db4f9b96-ff2e-49f7-ad9d-151ad43b25e0": {
+      "echo": "The web evidence directly states facts about Victor Koman's credentials and Capella University's location rather than merely reporting assertions, though sourced from Wikipedia which itself aggregates information.",
+      "temporal": "The evidence is temporally appropriate, describing Koman's Ph.D. conferred in 2016 and Capella University's current location in Minneapolis.",
+      "mismatch": "Position 1 incorrectly identifies Philip Connelly as the author and University of Minnesota as the conferring institution, which are substantive differences from the correct author (Victor Koman) and institution (Capella University) established by the evidence.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The web evidence establishes a clear chain: Victor Koman authored Kings of the High Frontier, holds a Ph.D. from Capella University, which is located in Minneapolis. Position 1 contains factual errors about both the author and the conferring institution, while Position 2's evidence chain directly supports the claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ab887faa-1497-4493-b53f-ef06beeae4a7": {
+      "echo": "The web evidence directly states facts from reliable sources (Genius.com, The Guardian, Wikipedia) rather than reporting assertions, establishing that Briana Corrigan performed on 'A Little Time' as a duet and is Northern Irish.",
+      "temporal": "The evidence is temporally consistent with the claim about Choke's chart performance in 2024, and Briana Corrigan's Northern Irish citizenship is a permanent attribute unaffected by time.",
+      "mismatch": "Position 1 conflates the claim by arguing it refers to Elbow's album and Guy Garvey, but the claim specifically names Dave Hemingway and 'the song that pushed Choke to number 2'\u2014which the evidence identifies as 'A Little Time' featuring Briana Corrigan, not a song featuring Guy Garvey.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The web evidence confirms all components of the claim: Dave Hemingway performed on 'A Little Time' (confidence 0.60), it is a duet (confidence 0.85), Briana Corrigan is the duet partner (confidence 0.85), she is Northern Irish (confidence 0.85), and 'A Little Time' pushed Choke to number 2. Position 1's refutation is based on a misidentification of which song and artist the claim references.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ead5541c-d7a6-445e-ba3c-82c52be4a660": {
+      "echo": "The web evidence directly states facts about The Office being based on/adapted from the BBC series, rather than merely reporting assertions, with high confidence ratings from Wikipedia and other sources.",
+      "temporal": "The evidence describes the entire American series (2005-2013) and its relationship to the BBC series, which is temporally relevant to season 2 (2005-2006), though it does not specifically distinguish between seasons.",
+      "mismatch": "Position 2 makes a substantive distinction: the claim states season 2 'was an adaptation' (present tense, suggesting direct adaptation of BBC content), while Position 2 argues season 2 featured 'mostly original content' rather than adaptations of specific BBC episodes\u2014this is a material difference about the nature of the content.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.72,
+      "reason": "While the American Office series as a whole was based on the BBC series, the retrieved passage explicitly states 'Season 2 was the first episode of the series to feature original writing; previous episodes were closely tied to the original BBC show,' indicating season 2 moved away from direct adaptation. The claim's assertion that season 2 'was an adaptation' is contradicted by evidence that it featured original content instead.",
+      "sided_with": null
+    },
+    "hover-c14f9f57-1965-4ae7-8062-a62cf0800b00": {
+      "echo": "The evidence directly states facts about the song 'One Dance' and its performers from reliable sources (Wikipedia, world music awards), not merely reporting assertions.",
+      "temporal": "The evidence is current and describes the actual composition of 'One Dance,' which is relevant to evaluating the claim about who collaborated on the song Kyla sang.",
+      "mismatch": "The substantive difference is that the claim requires a South African rapper to be featured on the song Kyla sang, but the evidence shows 'One Dance' features Drake (Canadian) and Wizkid (Nigerian) as the rappers, not a South African rapper.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.95,
+      "reason": "The evidence confirms DJ Maphorisa produced 'One Dance' and Kyla sang on it, but the song features Drake and Wizkid as rappers, not a South African rapper. This is a substantive mismatch with the claim's core requirement that a contemporary South African rapper collaborated on the song Kyla sang.",
+      "sided_with": null
+    },
+    "hover-21a60cc5-1bf9-4b05-9a47-eb0f9f24f025": {
+      "echo": "The evidence directly states facts about Millard Fillmore's father being a farmer, his service as a US Representative from New York, and his daughter Mary Abigail Fillmore, rather than merely reporting assertions.",
+      "temporal": "The evidence describes historical facts about Millard Fillmore (1800-1874) and his family, which are temporally appropriate for evaluating a claim about biographical relationships.",
+      "mismatch": "The claim's reference to 'the former Texans president' is substantively different from Millard Fillmore, who was the 13th President of the United States, not a Houston Texans president; the knowledge graph provides no evidence connecting any Texans president to the Fillmore family.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "While the evidence confirms that Millard Fillmore's father was a farmer, Fillmore was a US Representative from New York, and he fathered Mary Abigail Fillmore, the claim's opening phrase 'the former Texans president' is factually incorrect. Millard Fillmore was never a Houston Texans president; he was the 13th US President. This substantive mismatch refutes the claim as stated.",
+      "sided_with": "wkgfc"
+    },
+    "hover-5f9e705e-a842-4103-89e4-cde1bee661d8": {
+      "echo": "The evidence directly states facts from Wikipedia and other sources rather than merely reporting assertions, establishing the identities and credits of the individuals involved.",
+      "temporal": "All evidence is current and describes the films as they were released and credited, with no temporal inconsistencies between the claim and evidence.",
+      "mismatch": "The substantive difference is that the evidence establishes Ant-Man was co-written by Edgar Wright, Adam McKay, and Joe Cornish\u2014not by Paul Rudd. While Wikidata lists Paul Rudd as a screenwriter for Ant-Man, the web evidence from Wikipedia (confidence 0.95) lists only Edgar Wright and Adam McKay, and does not list Paul Rudd among the screenwriters, creating a direct contradiction with the claim's assertion that Paul Rudd co-wrote it.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The claim correctly identifies Joe Cornish as the director of Attack the Block and writer of The Kid Who Would Be King, but falsely asserts that Paul Rudd co-wrote Ant-Man. The high-confidence Wikipedia evidence lists Edgar Wright and Adam McKay as screenwriters, with no mention of Paul Rudd in that capacity, while Wikidata's inclusion of Paul Rudd as a screenwriter conflicts with the more authoritative Wikipedia sources and may reflect acting credits or other contributions rather than writing credits.",
+      "sided_with": "direct"
+    },
+    "hover-ef7713fe-f6f0-4ede-9dfc-c01e7fb15df0": {
+      "echo": "The web evidence from shanigandhi.com appears to be self-reporting or promotional material from Shani Gandi's own website, which asserts the collaboration rather than independently establishing it as fact.",
+      "temporal": "The evidence does not indicate when the claimed collaboration occurred, so temporal consistency cannot be evaluated, but this does not resolve the core factual dispute.",
+      "mismatch": "Position 2 conflates 'Love Me Like You Mean It' with Scotty McCreery (2013), but the evidence clearly establishes Kelsea Ballerini as the performer of this song per Wikidata, which is a substantive correction that undermines Position 2's core argument.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The web evidence (confidence 0.70) directly establishes that Shani Gandi worked with Kelsea Ballerini, and Wikidata confirms Kelsea Ballerini performed 'Love Me Like You Mean It' in the country pop genre in the United States. Position 2's refutation is based on a factual error about who performed the song, which is definitively contradicted by the knowledge-graph evidence.",
+      "sided_with": "wkgfc"
+    },
+    "hover-1813259f-144c-4906-a5a0-a770e96aa61d": {
+      "echo": "The evidence directly states facts from authoritative taxonomic sources (iNaturalist, Wikidata, research passages) rather than reporting assertions, establishing a reliable factual basis.",
+      "temporal": "All evidence appears current and describes present taxonomic classifications with no indication of temporal changes that would affect the validity of species counts.",
+      "mismatch": "Position 1 commits a critical error by comparing Ruellia (genus, ~300 species) to Bromeliaceae (family, 3000+ species) rather than comparing genera. Position 2 correctly identifies that Billbergiopsis is a subgenus within the genus Quesnelia, making the proper comparison Lonicera (~180 species) versus Quesnelia (22-25 species), which supports the claim.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The claim's two parts are both supported: (1) Anisacanthus is called 'desert honeysuckle' per Wikidata, and (2) Lonicera (honeysuckle genus, ~180 species) has more species than Quesnelia (the genus containing Billbergiopsis subgenus, 22-25 species). Position 1 incorrectly compared a genus to a family rather than genus-to-genus as the claim requires.",
+      "sided_with": "wkgfc"
+    },
+    "hover-41357f43-0e16-48e2-8c49-869054a9ce46": {
+      "echo": "The evidence directly states facts from Knowledge Graph and Wikipedia sources rather than reporting assertions, so the echo check is satisfied.",
+      "temporal": "The evidence is current and describes the present band memberships, which is appropriate for evaluating the claim about total bands each artist has been in.",
+      "mismatch": "Position 2 conflates the claim by introducing 'I Want You So Bad' by The Jaguars and Crazy Town's 'Butterfly', but the KG evidence clearly identifies Heart as the performer of 'I Want You So Bad', making this a substantive mismatch that undermines Position 2's reasoning.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The KG evidence establishes that Alison Mosshart was a member of 2 bands (The Dead Weather and The Kills) and that 'I Want You So Bad' is performed by Heart (1 band entity). Under the standard interpretation where 'the artist of [song]' refers to the credited performer entity rather than individual members, 2 > 1 supports the claim. Position 2's attempt to redirect to different songs and individual band members' histories does not refute the straightforward comparison between Mosshart's band count and Heart's.",
+      "sided_with": "wkgfc"
+    },
+    "hover-e07632d8-3929-427b-b2e5-f7aaeded3539": {
+      "echo": "Position 1 provides no direct evidence supporting the claim, only speculation that Ancelotti's proximity to Mantua 'reasonably well' satisfies the requirement, which is assertion rather than factual establishment.",
+      "temporal": "The evidence is temporally appropriate, as it describes current and historical facts about Anna Isabella Gonzaga (born 1655) and contemporary Bayern Munich managers.",
+      "mismatch": "Position 2 identifies a substantive difference: the claim requires a manager native to the duchy Anna Isabella Gonzaga was heir of (Guastalla, per the KG evidence), but no Bayern Munich manager has been shown to be born there, whereas Position 1 attempts to satisfy the requirement through geographical proximity rather than actual nativity.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The KG evidence establishes that Anna Isabella Gonzaga was heir of the Duchy of Guastalla (her father was Duke of Guastalla). Position 2 conducted targeted searches for Bayern Munich managers born in Guastalla with no results, and Position 1's suggestion of Ancelotti relies on regional proximity rather than actual nativity to the duchy. The claim requires a manager who was a 'native of the duchy,' which neither position has substantiated.",
+      "sided_with": "wkgfc"
+    },
+    "hover-33dbbf8f-3304-43d7-aa0b-8fc397e9f0a3": {
+      "echo": "The evidence directly states occupational facts about both individuals from reliable sources (Wikidata, web sources) rather than merely reporting assertions.",
+      "temporal": "The evidence describes current/established occupational classifications with no temporal issues that would affect the validity of the comparison.",
+      "mismatch": "Position 2 conflates the broad category 'musician' with specific professions; the claim correctly identifies that mezzo-soprano/composer and jazz-trombonist are distinct professions, even though both practitioners are musicians in a general sense.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The evidence establishes that Cathy Berberian's occupations are mezzo-soprano and composer, while Dickran Tevrizian's occupations are judge, lawyer, and jazz-trombonist. These are distinct professional categories with no overlap. Position 2's argument that both are 'musicians' conflates a general category with specific professions, which does not refute the claim's accurate statement about their distinct professional identities.",
+      "sided_with": "wkgfc"
+    },
+    "hover-b92afed8-08e1-462d-b763-c2f411f03618": {
+      "echo": "The web evidence from Wikipedia directly states facts about ownership, sister station relationships, and broadcast licensing rather than reporting assertions, meeting the standard for factual evidence.",
+      "temporal": "The evidence describes current or ongoing relationships (ownership, licensing, administrative divisions) with no indication of temporal change, so it is appropriate for evaluating the claim as stated.",
+      "mismatch": "Position 1 claims the relationship 'cannot be verified as stated' and appears 'inaccurate or unverifiable,' but the evidence directly verifies each component: KKWQ is the sister station, is owned by Border Broadcasting, is licensed to the Northwest Angle, and the Northwest Angle is coextensive with Angle Township (confirmed by matching FIPS codes 27-01550).",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "All four components of the claim are directly verified by Wikipedia sources with consistent confidence levels (0.85): the sister station (KKWQ) exists, is owned by Border Broadcasting, covers the Northwest Angle, and the Northwest Angle is coextensive with Angle Township as confirmed by matching FIPS codes. Position 1's claim of unverifiability is contradicted by the available evidence.",
+      "sided_with": "wkgfc"
+    },
+    "hover-0519da14-34cd-43a6-8c54-dc9cc51292b4": {
+      "echo": "The web evidence directly states that Liz Rose is a composer of Songs About Rain, and the KG evidence directly states that Liz Rose is a composer of You Belong with Me with Taylor Swift; these are not mere assertions but documented facts from reliable sources.",
+      "temporal": "All evidence is consistent with the claim's timeframe; Songs About Rain was published in 2003 and You Belong with Me is from the Fearless album era, with no temporal contradictions.",
+      "mismatch": "n/a",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.98,
+      "reason": "The evidence establishes all four components of the claim: (1) Liz Rose co-wrote Songs About Rain with Pat McLaughlin (web evidence, confidence 0.95); (2) Liz Rose co-wrote You Belong with Me with Taylor Swift (KG evidence); (3) therefore Liz Rose is Pat McLaughlin's co-writer on that song; (4) and she has co-written with Taylor Swift on You Belong with Me. Position 2's objection that the link 'cannot be verified' is contradicted by the direct evidence establishing Liz Rose's involvement in both works.",
+      "sided_with": "wkgfc"
+    },
+    "hover-43327ff8-e7b2-45d8-b162-4a66f450fc42": {
+      "echo": "The evidence directly states taxonomic facts from authoritative sources (plantsnap.com, Wikipedia, ScienceDirect, Wikidata) rather than merely reporting assertions, establishing the factual basis for the claim.",
+      "temporal": "The evidence describes current taxonomic classifications that are stable and timeless in nature, so temporal considerations do not apply to this botanical taxonomy question.",
+      "mismatch": "n/a",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "The evidence conclusively establishes that oenanthotoxin is extracted from Oenanthe crocata (confidence 0.90), which belongs to family Apiaceae (confidence 0.95), while Costus belongs to family Costaceae per Wikidata. Since Apiaceae \u2260 Costaceae, the claim that these two are NOT both in Apiaceae is factually correct.",
+      "sided_with": "wkgfc"
+    },
+    "hover-f6d389c5-0589-4f8c-9630-75ddce8fbcb5": {
+      "echo": "The web evidence directly states facts about Ransom Riggs' citizenship and birthplace from authoritative sources (Wikipedia, Amazon), not merely reporting assertions.",
+      "temporal": "All evidence is current and describes the relevant time periods; there is no temporal mismatch that would affect the validity of the claim.",
+      "mismatch": "The critical mismatch is that the Knowledge Graph identifies 'Hollow City' as a Portuguese film from 2004, while web evidence identifies Ransom Riggs as the American author/creator of a novel called Hollow City. These appear to be different works with the same title, making the evidence about 'John Berry' potentially referring to a different person than the filmmaker mentioned in Position 1.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "Ransom Riggs is confirmed as American (citizenship: United States, birthplace: Maryland). John Berry is confirmed as having United Kingdom citizenship per Wikidata. The claim that they are from the same country is therefore refuted, as the United States and United Kingdom are different countries. The ambiguity about which 'Hollow City' and which 'John Berry' creates some uncertainty, but the most direct evidence supports the refutation.",
+      "sided_with": "wkgfc"
+    },
+    "hover-c75daee9-edd3-44ed-bbd6-6b9bca3890e2": {
+      "echo": "The evidence directly states facts about Chun Woo-hee's 2016 filmography and The Wailing's genre from reliable sources (Wikidata, Fandango, passages), rather than merely reporting assertions.",
+      "temporal": "The evidence describes 2016 specifically, matching the temporal scope of the claim about 'the film that Chun Woo-hee acted in 2016.'",
+      "mismatch": "Position 2's refutation rests on the claim using singular 'the film' when multiple films existed, but this is a substantive logical objection: the claim's presupposition of singularity is factually incorrect given the evidence of at least two 2016 films (The Wailing and Love, So Divine).",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The claim's use of singular 'the film' presupposes Chun Woo-hee acted in only one film in 2016, but evidence confirms she acted in at least two films released in 2016: The Wailing (confirmed horror) and Love, So Divine (genre unconfirmed). The singular presupposition is factually incorrect, making the claim refuted on logical grounds regardless of whether individual films were horror.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ce7e5a05-3062-4273-ab30-2b208659cb12": {
+      "echo": "The web evidence directly states that Edwin Gagiano was cast as Alf Bueller in Back to the 80's and received an award for best leading actor, rather than merely reporting assertions.",
+      "temporal": "The evidence is temporally appropriate, with the award dated to 2007 and no indication of subsequent changes that would affect the claim's accuracy.",
+      "mismatch": "The claim includes two unverified elements (dramedy genre and Neil Gooding as writer) that cannot be confirmed from evidence, but the core factual claims about the award and role are substantively supported by the available evidence.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.65,
+      "reason": "The web evidence confirms the two primary factual elements of the claim: Edwin Gagiano won a Best Actor Award and played Alf Bueller in Back to the 80's. While the dramedy genre and Neil Gooding's authorship cannot be verified from the provided sources, these are secondary descriptors rather than core facts. The main claim about the award and role is supported by moderate-confidence web evidence.",
+      "sided_with": "direct"
+    },
+    "hover-680f4c0a-74ad-4292-96af-18cb81684227": {
+      "echo": "Position 2 cites web evidence that Ronaldinho received Ballon d'Or and FIFA World Player of the Year from authoritative sources (Britannica, Wikipedia), which STATES these facts rather than merely reporting assertions.",
+      "temporal": "The evidence about Ronaldinho's awards (2004-2005) and his FC Barcelona membership are historical facts that remain true; the 2018 film date is also clearly established.",
+      "mismatch": "The critical substantive mismatch is that the Wikidata and retrieved passages confirm Jean-Claude Van Damme starred in Kickboxer: Retaliation, while Position 2 claims Ronaldinho was a cast member\u2014this is directly contradicted by the highest-confidence evidence (0.95 for Van Damme, 0.70 for Ronaldinho with a passage explicitly stating 'Evidence does not confirm Ronaldinho starred in Kickboxer: Retaliation').",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "While Ronaldinho did win the Ballon d'Or and FIFA World Player of the Year and was an FC Barcelona player/ambassador, the claim fundamentally fails because Ronaldinho did not star in Kickboxer: Retaliation\u2014Jean-Claude Van Damme did. Position 2's core evidence linking Ronaldinho to the film has only 0.70 confidence and is directly contradicted by retrieved passages and higher-confidence Wikidata entries.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ec7baab5-7cb9-4b4f-b4da-8411757b828d": {
+      "echo": "The evidence directly states facts from authoritative sources (Aardman Fandom, Wikipedia) rather than merely reporting assertions, establishing that Nick Park created Creature Comforts and Christopher Sadler worked on it.",
+      "temporal": "The evidence is temporally appropriate, describing the creation and production of these works without temporal inconsistencies.",
+      "mismatch": "The claim contains a substantive error: it refers to 'TSE and Gromit' when the actual work is 'Wallace and Gromit.' This is not a paraphrase or minor variation but a factually incorrect title that misidentifies the creator's work.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "While all other elements of the claim are factually correct (Nick Park created the animation with Christopher Sadler, Creature Comforts matches the description), the claim fundamentally misnames the original work as 'TSE and Gromit' instead of 'Wallace and Gromit.' This substantive error in the premise makes the overall claim factually incorrect despite the accuracy of its other components.",
+      "sided_with": "wkgfc"
+    },
+    "hover-f32edc63-77cf-4166-acc0-09a85b52e4de": {
+      "echo": "The evidence directly states facts from authoritative sources (Wikipedia, Goodreads, Wikidata) rather than reporting assertions, establishing the factual basis for the claim.",
+      "temporal": "The evidence is temporally appropriate, with publication dates (1962 for Eleven Kinds of Loneliness) and current work attributions matching the claim's timeframe.",
+      "mismatch": "No substantive mismatch; the KG's erroneous classification of Eleven Kinds of Loneliness as 'traditional folk music' and 'album' (likely data corruption) is contradicted by consistent web evidence (confidence 0.95) and multiple KG author triples confirming Richard Yates as the author.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "All core claims are established: Richard Yates authored both Liars in Love and Eleven Kinds of Loneliness (confirmed by KG author triples); both are short story collections (confirmed by web evidence at 0.95 confidence and KG); Italo Calvino authored Cosmicomics (confirmed by KG); Cosmicomics is a short story collection (confirmed by both KG and web evidence). The genre match is substantiated despite KG data quality issues on Eleven Kinds of Loneliness.",
+      "sided_with": "wkgfc"
+    },
+    "hover-3324ce5c-5052-4ea9-a0ee-ec1e3d542f08": {
+      "echo": "The retrieved passage stating 'Vernon Kay hosted All Star Family Fortunes, which aired two years after The Moment of Truth (UK game show) ended in 2001' appears to be reporting the claim itself rather than independently establishing it as fact.",
+      "temporal": "The web evidence is temporally current and directly addresses the period in question: The Moment of Truth ended 2001-09-29 and All Star Family Fortunes started 2006-10-28, both high-confidence Wikipedia sources.",
+      "mismatch": "The difference is substantive: the claim asserts a 2-year gap ('two years after'), but the evidence shows a 5-year gap (2001 to 2006), which is a material factual error, not a rounding or paraphrase variation.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "While Vernon Kay did host All Star Family Fortunes (confirmed), the temporal relationship is factually incorrect. The Moment of Truth ended in 2001, and All Star Family Fortunes began in 2006\u2014a 5-year gap, not 2 years as claimed. This substantive discrepancy refutes the claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-b568be4e-188e-4f80-a544-557628435cb2": {
+      "echo": "The evidence comes from Wikidata, a structured knowledge base that states facts rather than merely reporting assertions, so this passes the echo check.",
+      "temporal": "The evidence is current and describes the actual occupations and works of both individuals, which is appropriate for evaluating their professional identities.",
+      "mismatch": "Position 1 claims Wallace wrote 'Girl with Curious Hair' as a stage adaptation/play, but the Wikidata evidence lists it only as a notable work without specifying its genre or format; the evidence does not confirm it is a play rather than a short story collection or other work.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "The Wikidata evidence clearly shows Horton Foote has 'playwright' as an occupation, while David Foster Wallace's occupations are listed as 'writer,' 'university teacher,' 'novelist,' and 'essayist'\u2014notably excluding 'playwright.' While Wallace's 'Girl with Curious Hair' appears in his notable works, it is not confirmed as a play in the evidence provided, and his primary occupational classification does not include playwright. Therefore, the claim that they are 'not both playwrights' is supported by the evidence.",
+      "sided_with": "wkgfc"
+    },
+    "hover-d81d59ef-c199-4f3e-9d3f-94af7920499e": {
+      "echo": "The web evidence directly states that Buried Treasure has genre 'scripted reality television' (confidence 0.95) and Pawn Stars has genre 'scripted reality television' (confidence 0.60), rather than merely reporting assertions.",
+      "temporal": "The Wikidata evidence identifies Buried Treasure as a 1938 animated short film, which is from a different era and context than modern reality television, creating a temporal mismatch with the claim about contemporary scripted reality shows.",
+      "mismatch": "The substantive difference is that Buried Treasure is documented in Wikidata as an 'animated short film' from 1938, which is categorically incompatible with being a 'scripted reality television show'\u2014these are fundamentally different media formats separated by decades.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "The Wikidata knowledge graph provides authoritative evidence that Buried Treasure is a 1938 animated short film, not a reality television show of any kind. While web evidence claims Buried Treasure is 'scripted reality television,' this directly contradicts the established Wikidata classification and appears to be an error in the web source. The claim cannot be supported when one of its two components is factually incorrect.",
+      "sided_with": "wkgfc"
+    },
+    "hover-75bcdb78-c875-43f9-bdc0-3b0eb9d7847a": {
+      "echo": "The web evidence directly states facts (Wikipedia, IMDB sources) rather than merely reporting assertions, establishing the core claims about the medley, Peter Kay's involvement, and Car Share's setting.",
+      "temporal": "All evidence is current and describes the works as they exist, with no temporal issues affecting the claim's accuracy.",
+      "mismatch": "Position 2's objection about the supermarket characterization is not substantive: the retrieved passage explicitly states Car Share was 'set around a supermarket and car share scheme,' which directly matches the claim's language. The claim does not overstate the supermarket's role\u2014it simply notes the show was set around both elements, which is accurate.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "All key factual elements are verified by high-confidence web sources: the medley is by Peter Kay's Animated All Star Band, Peter Kay was in Murder on the Blackpool Express, he co-created Car Share, and the show was explicitly set around a supermarket and car share scheme. Position 2's concern about the supermarket characterization is refuted by the retrieved passage that confirms this exact description.",
+      "sided_with": "wkgfc"
+    },
+    "hover-7ae868d4-0322-427f-87f0-bab63cc1ab2d": {
+      "echo": "The web evidence directly states facts about Stefan Edberg's tournament victory, his opponent Brad Gilbert, and career title counts rather than merely reporting assertions.",
+      "temporal": "The evidence describes Stefan Edberg's career totals (41 singles titles) and the 1990 tournament outcome, which are historical facts that remain valid; \u00c9douard Roger-Vasselin's 6 titles are also established historical facts.",
+      "mismatch": "Position 2 conflates Brad Gilbert's own record (20 titles) with the claim's subject (the player who played Brad Gilbert in the final, which is Stefan Edberg with 41 titles), creating a substantive misinterpretation of the claim's referent.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "The claim asks whether the player who played Brad Gilbert in the 1990 final won more events than Roger-Vasselin. Stefan Edberg defeated Brad Gilbert in that final and won 41 singles titles compared to Roger-Vasselin's 6 titles, clearly satisfying the claim. Position 1 correctly identifies the referent and establishes the comparison; Position 2 misinterprets the claim by discussing Brad Gilbert himself rather than his opponent.",
+      "sided_with": "wkgfc"
+    },
+    "hover-971a8eb0-d617-4db3-a50e-da7089e3bb4e": {
+      "echo": "The evidence directly states facts from authoritative sources (nobelprize.org, Wikipedia) rather than reporting assertions, establishing a reliable factual basis.",
+      "temporal": "All evidence is current and describes the relevant periods accurately; the 1963 publication date and 1963 Nobel Prize award are both temporally appropriate to the claim.",
+      "mismatch": "The substantive mismatch is that Elizabeth Appleton was written by John O'Hara (American), not by the 1963 Nobel Prize winner Giorgos Seferis (Greek). The claim's logical structure requires the novel's author to be connected to the Nobel Prize winner, but the evidence shows these are different people entirely.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "While Elizabeth Appleton is confirmed as a 1963 novel and Giorgos Seferis won the 1963 Nobel Prize in Literature, the claim's premise fails because it conflates the novel with a Nobel Prize winner. The novel was written by John O'Hara (American), not by Seferis. The comparison of nationalities cannot proceed as intended because the novel itself did not win the Nobel Prize.",
+      "sided_with": "direct"
+    },
+    "hover-f08aeb5d-6375-4d56-81a0-bc5f2d09d09f": {
+      "echo": "The web evidence directly states facts (Michael Gambon played Dumbledore, appeared in Deathly Hallows films, performed in Centre Play in 1976, Michael Lombard performed in Centre Play in 1976) rather than merely reporting assertions, and the knowledge-graph evidence confirms Dumbledore founded the Order of the Phoenix.",
+      "temporal": "All evidence is temporally appropriate: the 1976 play performances are from the correct period, and the Harry Potter films and character information are from the relevant era when Gambon played Dumbledore.",
+      "mismatch": "The claim refers to a 'Deathly series' while evidence shows 'Harry Potter and the Deathly Hallows' films\u2014this is a substantive difference in terminology, though the intent is clear; however, all three substantive claims (Dumbledore founded Order of Phoenix, Gambon played this character, Gambon was in a 1976 play with Lombard) are supported by evidence.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.82,
+      "reason": "The evidence establishes all three core claims: Michael Gambon played Albus Dumbledore (the founder of the Order of the Phoenix) in the Deathly Hallows films, and both Gambon and Michael Lombard performed in Centre Play in 1976. The terminology 'Deathly series' is imprecise but reasonably refers to the Deathly Hallows films where Gambon appeared.",
+      "sided_with": "wkgfc"
+    },
+    "hover-053dc588-1c8b-4eb2-84ff-bb32ba82dfdd": {
+      "echo": "The evidence directly states facts from authoritative sources (Wikipedia, Wikidata, themoviedb.org) rather than merely reporting assertions, so the echo check does not disqualify the evidence.",
+      "temporal": "All evidence is current and describes the films as they were made/released in 1999 and 2008, so temporal consistency is not an issue.",
+      "mismatch": "The country of origin discrepancy is substantive: the claim asserts 'British-German' while the highest-confidence web evidence (0.85 from themoviedb.org) supports this, but conflicting evidence (0.70 from Wikipedia) states 'American.' More critically, the claim requires that Paul Boehmer (the confirmed narrator of Gregor and the Code of Claw with 0.95 confidence) appeared in The Thomas Crown Affair, but no evidence establishes this connection despite targeted searches.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "While McTiernan's direction and the three named actors' presence are confirmed, the critical failure is that Paul Boehmer, who narrated the 2008 audiobook (0.95 confidence), has no confirmed connection to The Thomas Crown Affair's cast. The country of origin also remains disputed (0.85 British-German vs 0.70 American), creating ambiguity on that element. The audiobook narrator connection\u2014essential to the claim's logic\u2014cannot be established.",
+      "sided_with": "wkgfc"
+    },
+    "hover-005b8ba7-a53a-46ea-85b0-a0b68789ee5e": {
+      "echo": "The evidence directly states facts from authoritative sources (Wikipedia, Wikidata, operatoday.com, discogs.com) rather than merely reporting assertions, establishing the factual basis for the claim.",
+      "temporal": "All evidence is current and describes the permanent characteristics of these operas (number of acts, cast members, recording producers), which are not subject to temporal change.",
+      "mismatch": "Position 2 raises a grammatical concern about pronoun reference, but the claim's structure is actually clear: 'this opera' in the second clause refers back to the opera identified in the first clause (the one Sonia Ganassi starred in as Elcia), making the logical comparison unambiguous.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "The evidence conclusively establishes that Sonia Ganassi performed as Elcia in Mos\u00e8 in Egitto (3 acts), and Richard Mohr recorded the first LP for Cavalleria Rusticana (1 act), making the comparison factually accurate. Position 2's concern about pronoun ambiguity is unfounded given the clear antecedent structure of the claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-807063e3-d156-4acf-b2ad-6c65ecba006d": {
+      "echo": "The evidence directly states facts from knowledge graphs and web sources rather than merely reporting assertions, establishing a factual basis for evaluation.",
+      "temporal": "The evidence is temporally appropriate: La colpa e la pena is dated 1961, Light Years Away is dated 1981, and occupational data for both Bellocchio and Tanner reflects their established careers.",
+      "mismatch": "There is a substantive mismatch: the claim states 'the writer of La colpa e la pena' but evidence shows Marco Bellocchio as director only, with no evidence of him writing it; additionally, the claim refers to 'the film Light Years Away' but the KG identifies a video game by that name, though web evidence confirms a 1981 film by Alain Tanner exists.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.75,
+      "reason": "The first part of the claim cannot be verified: while Marco Bellocchio is confirmed as a director of La colpa e la pena, there is no evidence he wrote it. The second part is ambiguous: the claim appears to reference a 1981 film directed by Alain Tanner (who is indeed a director), but the KG entry for 'Light Years Away' refers to a video game, creating substantive confusion about which work is being claimed.",
+      "sided_with": null
+    },
+    "hover-f27c9688-137d-492f-b530-163356f00615": {
+      "echo": "All evidence directly states facts from reliable sources (Wikipedia, Wikidata) rather than reporting assertions, so the echo check passes.",
+      "temporal": "The evidence describes the relevant periods: The Lumineers formed in 2005, Catfish and the Bottlemen formed in 2007, and The Balcony was released in 2014, all contemporaneous with or prior to when the claim would have been made.",
+      "mismatch": "The substantive difference is that The Lumineers (formed 2005) have been around only 2 years longer than Catfish and the Bottlemen (formed 2007), not 5 years as claimed. This is a clear arithmetic discrepancy of 3 years, not a rounding or paraphrase issue.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.98,
+      "reason": "Position 1 correctly identifies the claim's core assertion: an American band (The Lumineers, formed 2005) released Stubborn Love and has been around 5 years longer than the band that released The Balcony (Catfish and the Bottlemen, formed 2007). The evidence establishes only a 2-year difference (2007-2005=2), directly contradicting the claimed 5-year difference. Position 2's attempt to reinterpret the claim using Frightened Rabbit is unsupported by the evidence provided, which clearly identifies Catfish and the Bottlemen as the performer of The Balcony.",
+      "sided_with": "wkgfc"
+    },
+    "hover-e3f62cbe-f59e-4958-b853-b28b7d58b9a9": {
+      "echo": "The evidence that Bryn Mawr is a Hidden Ivy comes from Wikipedia and ivywise.com, which are reporting factual classifications rather than assertions about the claim itself, so this constitutes genuine evidence rather than echo.",
+      "temporal": "The evidence is current and describes the present state of these institutions; the Hidden Ivies book was published in 2000, and the claim does not specify a time period, so temporal alignment is appropriate.",
+      "mismatch": "Position 2 asserts that Middlebury College (Vermont) is the sixth Little Ivy, not a Pennsylvania school, and that Eddie George's MBA is from Washington University in St. Louis, not Pennsylvania\u2014these are substantive factual differences if true, but the provided evidence does not include information about Eddie George's MBA or confirm Middlebury as the definitive sixth school in the book.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.72,
+      "reason": "While the evidence confirms Bryn Mawr is associated with Hidden Ivies and is in Pennsylvania, Position 2 provides specific factual claims about Eddie George earning his MBA from Washington University in St. Louis (not Pennsylvania) and that Middlebury is typically the sixth Little Ivy. The claim requires both conditions to be true (sixth school AND Eddie George's MBA both in Pennsylvania), and Position 2's assertion about Eddie George's MBA location, if accurate, constitutes a substantive refutation of the second part of the claim.",
+      "sided_with": "direct"
+    },
+    "hover-52e07c94-31fe-4ba0-b632-b3d95cb7361b": {
+      "echo": "The web evidence directly states facts from Wikipedia and other sources rather than merely reporting assertions, establishing the core relationships between Carousel, Masterpiece Comics, R. Sikoryak, and the literary adaptations.",
+      "temporal": "All evidence is current and describes the same period; there are no temporal inconsistencies between the claim and evidence.",
+      "mismatch": "The claim states the work is called 'Waiting for Go' but high-confidence web evidence (0.95) consistently identifies it as 'Waiting to Go'\u2014this is a substantive factual error in the specific title of the work being discussed.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "While the core claim about R. Sikoryak creating Masterpiece Comics as literary adaptations mixing Waiting for Godot with Beavis and Butt-Head is well-supported by high-confidence evidence, the specific title of the work is factually incorrect. The work is 'Waiting to Go' not 'Waiting for Go,' a substantive error in a key detail of the claim.",
+      "sided_with": "wkgfc"
+    },
+    "hover-f1a50be8-ca49-47ee-9689-e097ba31055c": {
+      "echo": "The evidence directly states facts from authoritative sources (parliament.uk, Wikipedia, BBC News) rather than reporting assertions, establishing the core facts independently.",
+      "temporal": "The evidence describes events from 2014 and 1997, which are the exact periods the claim addresses, so temporal alignment is appropriate.",
+      "mismatch": "The claim specifies 'April 23, 2014' but evidence states Patrick Mercer was suspended on '29 April 2014'\u2014a substantive 6-day discrepancy in a specific date claim, not a trivial rounding or paraphrase difference.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "While the core narrative is accurate (Mercer's suspension led to Jenrick winning Newark, where Fiona Jones was elected in 1997), the claim contains a specific factual error: the suspension date was April 29, 2014, not April 23, 2014. This substantive date discrepancy refutes the claim as literally stated.",
+      "sided_with": null
+    },
+    "hover-9af2c0f5-57b5-4ba8-89c3-964d06023e2a": {
+      "echo": "The web evidence directly states facts about composers, dates, and publication dates rather than reporting assertions, so the echo check does not disqualify the evidence.",
+      "temporal": "The evidence describes the relevant historical periods: \u00c9picure's 1800 premiere and the composers' lifespans (1760-1842, 1763-1817) versus Tippett's lifespan (1905-1998) and 20th-century compositional period, which are all temporally appropriate to the claim.",
+      "mismatch": "Position 1 incorrectly identifies Gaspare Spontini as the composer of \u00c9picure, when the web evidence clearly identifies \u00c9tienne M\u00e9hul and Luigi Cherubini as the composers. This is a substantive error that undermines Position 1's refutation.",
+      "verdict": "SUPPORTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "The claim that Tippett wrote his music more recently than the composers of \u00c9picure is supported by the evidence: \u00c9picure was premiered in 1800 by M\u00e9hul (1763-1817) and Cherubini (1760-1842), while Tippett lived 1905-1998 and composed in the 20th century. Position 1's refutation is based on a factual error about who composed \u00c9picure.",
+      "sided_with": null
+    },
+    "hover-7ecd3911-ebdd-4d4a-a4e6-7bda6adf3782": {
+      "echo": "The web evidence directly states facts from reliable sources (Rotten Tomatoes, IMDb, Wikipedia) rather than reporting assertions, and the knowledge graph provides factual data about Gong Yoo's birth name and pseudonym.",
+      "temporal": "All evidence is current and describes the 2016 film period that the claim addresses, with no temporal mismatch.",
+      "mismatch": "Position 1 claims Yoon Kye-sang was not in the film, but the web evidence explicitly lists Yoon Kye-sang as a cast member with 0.95 confidence from Wikipedia; this is a substantive contradiction, not a paraphrase or minor difference.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "The web evidence confirms all three essential claims: (1) Gong Yoo is a stage name (birth name \uacf5\uc9c0\ucca0), (2) Gong Yoo co-starred in Train to Busan with both Jung Yu-mi and Yoon Kye-sang (all listed as cast members with 0.95 confidence), and (3) the film is from 2016. Position 1's refutation is contradicted by the Wikipedia source listing Yoon Kye-sang as a cast member.",
+      "sided_with": "direct"
+    },
+    "hover-a3235c9c-d9fd-4e5f-8c5f-16151c3d753a": {
+      "echo": "The evidence directly states facts from Wikipedia and Letterboxd (Case 219 is a 2010 American drama film, Evan Ross starred in it, Headless Body in Topless Bar is a 1995 black comedy/psychological horror film with Biff Yeager), rather than merely reporting assertions.",
+      "temporal": "All evidence is current and describes the films at their time of release (2010 for Case 219, 1995 for Headless Body in Topless Bar), which is appropriate for verifying cast and genre information.",
+      "mismatch": "The critical substantive gap is that Evan Ross is confirmed to star in Case 219, but the evidence provides a complete cast list for Headless Body in Topless Bar (Raymond J. Barry, Rustam Branaman, Jennifer McDonald, Taylor Nichols, David Selby, and Biff Yeager) with no mention of Evan Ross, despite high-confidence Wikipedia sources.",
+      "verdict": "REFUTED",
+      "decided_by": 3,
+      "confidence": 0.92,
+      "reason": "While Case 219 (2010 drama with Evan Ross) and Headless Body in Topless Bar (1995 black comedy/psychological horror with Biff Yeager) are both verified, the claim requires Evan Ross to be in the ensemble cast of the latter film. The provided cast list from high-confidence sources does not include Evan Ross, and no evidence establishes his participation in that film.",
+      "sided_with": null
+    },
+    "hover-8cd4dcab-adf9-4238-9476-dcb233f87a05": {
+      "echo": "The web evidence reporting that 'The Voluntary City: Choice, Community' is a biography of T.R.M. Howard comes from YouTube (confidence 0.60), which is a reporting/assertion source rather than authoritative documentation, while the passages retrieved appear to be summaries that may themselves be echoing the claim rather than independently verifying it.",
+      "temporal": "The evidence is temporally consistent, as it describes T.R.M. Howard's founding of the Regional Council of Negro Leadership (1951) and his roles, which are historical facts that do not change over time.",
+      "mismatch": "There is a substantive difference: Position 2 correctly identifies that 'The Voluntary City: Choice, Community' (2002) is an edited collection of essays about libertarian urban governance, not a biography of T.R.M. Howard. This is a fundamental categorical difference between the actual nature of the book and what the claim asserts.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.85,
+      "reason": "While T.R.M. Howard is correctly identified as founder of the Regional Council of Negro Leadership and as a civil rights leader, entrepreneur, and surgeon, the core claim that 'The Voluntary City: Choice, Community' is a biography of him is false. The book is an edited collection of essays on urban governance published in 2002, not a biographical work, making the entire claim substantively incorrect despite partial accuracy about Howard himself.",
+      "sided_with": "direct"
+    },
+    "hover-15a54b4b-ca18-426b-9362-97b2dc5d02f3": {
+      "echo": "The passages retrieved directly state facts about Bobby Petrino (2013 WKU record, Texan former football player, Louisville contract) rather than merely reporting assertions, so they constitute evidence of truth rather than mere claims.",
+      "temporal": "The evidence about Bobby Petrino's Louisville contract and current employment is recent/ongoing, while the claim asks about his current status; however, the 2013 WKU coaching record is appropriately dated to 2013, and the passages indicate he 'entered his ninth season at Louisville' suggesting continuous employment there.",
+      "mismatch": "Position 2 identifies Willie Taggart as the 2013 WKU coach, not Bobby Petrino; this is a substantive factual disagreement about who coached WKU in 2013, not a minor paraphrase difference.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.75,
+      "reason": "The retrieved passages directly confirm Bobby Petrino coached 2013 WKU to an 8-4 record (four-way tie for third), is a Texan former football player, and signed a seven-year contract with Louisville with evidence of ongoing employment there. Position 2's claim that Willie Taggart was the 2013 coach contradicts the passage evidence, which specifically attributes the 2013 season to Petrino.",
+      "sided_with": "wkgfc"
+    },
+    "hover-ee871f3f-bb24-44ca-a297-a72dc8a60bc8": {
+      "echo": "The knowledge graph evidence directly states facts about David Byrne and Talking Heads rather than reporting assertions, while the web evidence about KSPN's format comes from a single source that may itself be reporting rather than authoritatively stating.",
+      "temporal": "The claim references the 1980s for Talking Heads' critical acclaim, which is historically accurate; however, the claim about KSPN's current format and music programming is presented in present tense without temporal specificity, making it unclear whether this refers to current or historical programming.",
+      "mismatch": "Position 2 identifies a substantive contradiction: KSPN is established as a sports radio station in the knowledge graph, which is fundamentally incompatible with featuring music bands. This is not a paraphrase or minor difference but a categorical mismatch between a sports format and music programming.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.75,
+      "reason": "While Talking Heads' identity and critical acclaim are well-established, the core claim about KSPN featuring the band is refuted by the knowledge graph evidence that KSPN is a sports radio station, not a music station. Sports radio stations do not feature music bands in their programming, making the claim about KSPN featuring Talking Heads factually incorrect.",
+      "sided_with": "wkgfc"
+    },
+    "hover-16e97c68-a655-467e-8373-0784555d7f86": {
+      "echo": "The evidence directly states facts from knowledge graphs and Wikipedia rather than reporting assertions, so the echo check does not disqualify the evidence.",
+      "temporal": "The evidence describes the 2008 period when White Horse was released, which is the relevant temporal period for the claim.",
+      "mismatch": "Position 2 claims White Horse was released October 25, 2008, but the KG evidence only confirms 2008 without specifying the date; the Fearless album release of November 11, 2008 does not definitively refute a December 7, 2008 single release date, and the core co-writer claim (Liz Rose wrote both songs) is substantively accurate regardless of the specific release date discrepancy.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.72,
+      "reason": "The essential factual claim is supported: Liz Rose co-wrote both White Horse and Picture to Burn with Taylor Swift, as confirmed by KG triples and web evidence. While the specific December 7, 2008 date cannot be verified from the evidence provided and Position 2 suggests October 25, 2008, this date discrepancy does not substantively refute the core claim about shared co-authorship.",
+      "sided_with": "wkgfc"
+    },
+    "hover-e219c4ba-aba6-4386-a8b3-dae0d28b6097": {
+      "echo": "The high-confidence web evidence (0.95) from retroist.com directly states the dates (1866 and 1876) rather than merely reporting assertions, providing reliable factual grounding.",
+      "temporal": "All evidence describes the original creation periods of these drinks (1860s-1870s), which is exactly the period the claim addresses, so temporal alignment is sound.",
+      "mismatch": "The substantive disagreement is whether a 10-year difference qualifies as 'decades' (plural). Position 1 correctly notes that 'decades' typically implies 20+ years, while Position 2 stretches the definition to include a single decade. This is a genuine semantic/quantitative mismatch, not mere paraphrase.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.78,
+      "reason": "The evidence firmly establishes that Vernors (1866) predates Hires (1876) by approximately 10 years. However, the claim's use of 'decades' (plural) is factually incorrect\u2014one decade does not constitute 'decades.' Position 1 correctly identifies this substantive temporal mismatch, while Position 2 implausibly redefines 'decades' to mean a single decade.",
+      "sided_with": "wkgfc"
+    },
+    "hover-241da964-cd0b-4da0-9195-11467b013e19": {
+      "echo": "The evidence about Gerald Peary being a critic-at-large for The Arts Fuse in Boston/Essex County states facts from reliable sources; however, the passage 'Visionaire does not cover Essex County area but may in the future' appears to be an assertion rather than a documented fact, as it makes a specific claim about future intentions.",
+      "temporal": "The evidence is current and appropriate for evaluating the claim, which uses present tense language about Peary's role and Visionaire's coverage.",
+      "mismatch": "Position 1 raises a critical substantive issue: the Wikidata knowledge graph shows Essex County is located in New York, not Massachusetts, which directly contradicts the claim's geographic premise that Essex County, Massachusetts is the relevant area.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.75,
+      "reason": "While the evidence supports that Gerald Peary is a critic-at-large associated with Boston-area publications in Essex County, Massachusetts, the Wikidata knowledge graph definitively establishes that 'Essex County' without qualification refers to Essex County in New York, not Massachusetts. The claim's geographic foundation is undermined by this ambiguity, and the assertion about Visionaire's future coverage plans cannot be verified as fact.",
+      "sided_with": "wkgfc"
+    },
+    "hover-20dabcd8-d85d-44a6-bab9-6f2c8240d3d3": {
+      "echo": "The evidence directly states facts from authoritative sources (Wikipedia, Baidu, Wikidata) rather than reporting assertions, so this is not an echo check failure.",
+      "temporal": "The evidence is temporally appropriate; Du Zheheng's birthplace is a fixed historical fact, and the administrative structure of Jining with Yanzhou District is current and relevant.",
+      "mismatch": "The substantive difference is that the claim characterizes Jining as 'the city Du Zheheng was born in,' but evidence with high confidence (0.95) establishes Du Zheheng was born in Kaiyuan, Liaoning Province, not Jining or Yanzhou District.",
+      "verdict": "REFUTED",
+      "decided_by": 1,
+      "confidence": 0.95,
+      "reason": "While the first part of the claim (Yanzhou District is under Jining) is correct per KG evidence, the second part falsely characterizes Jining as Du Zheheng's birthplace. High-confidence web evidence establishes Du Zheheng was born in Kaiyuan, Liaoning, not Jining, making the overall claim factually incorrect.",
+      "sided_with": "wkgfc"
+    },
+    "hover-55867b38-3e59-4491-994f-4ea2deaa80c8": {
+      "echo": "The web evidence and passages directly state facts about 888 7th Avenue's ranking, Dan Nelson's birthplace, and building types rather than merely reporting assertions, though some passages appear to be retrieved summaries that could reflect source bias.",
+      "temporal": "All evidence is current or undated, with no indication of temporal changes to building rankings or Dan Nelson's biographical information that would affect the claim's accuracy.",
+      "mismatch": "Position 2 claims 888 7th Avenue is the 33rd tallest building, but the web evidence (confidence 0.95) and passages consistently state it is tied for 65th tallest; this is a substantive contradiction. Position 2 also claims Dan Nelson was born in Tulsa, Oklahoma, but multiple web sources (confidence 0.95 and 0.85) and passages state New York City as his birthplace.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.92,
+      "reason": "The web evidence and retrieved passages consistently support all key claims: 888 7th Avenue is tied for 65th tallest with Central Park Place (confidence 0.95), Dan Nelson is an American musician and Scientologist born in New York City (confidence 0.95 and 0.85), Central Park Place is a condominium building (confidence 0.85), and 888 7th Avenue is an office building not a condominium (confidence 0.85). Position 2's contradictory claims about the 33rd ranking and Tulsa birthplace are directly contradicted by the available evidence.",
+      "sided_with": "wkgfc"
+    },
+    "hover-69fe89d6-fe39-4938-bdc1-12cd3b513323": {
+      "echo": "The web evidence directly states facts (Nebraska is triply landlocked, HMCS Mayflower was named after Maianthemum canadense) rather than merely reporting assertions, and the retrieved passages explicitly confirm Nebraska's triply landlocked status.",
+      "temporal": "All evidence is current and describes the present state of affairs; there are no temporal mismatches between the claim and evidence.",
+      "mismatch": "Position 1 asserts no U.S. state is triply landlocked, but the evidence (web source with 0.95 confidence, retrieved passages, and knowledge graph) directly contradicts this by confirming Nebraska is triply landlocked; this is a substantive factual contradiction.",
+      "verdict": "SUPPORTED",
+      "decided_by": 2,
+      "confidence": 0.92,
+      "reason": "The evidence establishes all three components of the claim: Lincoln is Nebraska's capital (confirmed in knowledge graph), Nebraska is the only triply landlocked U.S. state (confirmed by web source at 0.95 confidence and multiple retrieved passages), and HMCS Mayflower was named after Maianthemum canadense, a plant (confirmed by web source at 0.85 confidence). Position 1's core objection\u2014that no U.S. state is triply landlocked\u2014is directly contradicted by the evidence.",
+      "sided_with": "wkgfc"
+    },
+    "hover-488cfa00-20b5-41ce-ba3a-26be66f064fe": {
+      "echo": "Position 1 provides general assertions about Duran and Babajian being chefs without citing specific verifiable sources, whereas Position 2 cites explicit Wikidata triples as factual evidence.",
+      "temporal": "The Wikidata evidence does not indicate dates, so it is unclear whether these occupations reflect current status or historical records, but the knowledge graph appears to be a current snapshot.",
+      "mismatch": "The difference is substantive: the claim asserts both individuals are 'famous chefs,' but the Wikidata evidence explicitly lists their occupations as 'painter' and 'drummer' respectively, with no mention of culinary work.",
+      "verdict": "REFUTED",
+      "decided_by": 2,
+      "confidence": 0.95,
+      "reason": "The Wikidata knowledge graph provides explicit, structured evidence that George Duran's occupation is listed as 'painter' and Ara Babajian's as 'drummer,' directly contradicting the claim that both are famous chefs. Position 1 makes unsupported assertions without citing authoritative sources, while Position 2 relies on verifiable knowledge graph data.",
+      "sided_with": "wkgfc"
+    },
+    "hover-1b36310b-33ab-4836-94fe-c2073cc3c399": {
+      "echo": "The evidence states facts from reliable sources (Wikipedia, academic sources) rather than merely reporting assertions, establishing a factual basis for the claim.",
+      "temporal": "The evidence describes the relevant historical period when David May founded the company, Macy's/May Company operated as anchor stores, and KWSV-LP was established, all temporally consistent with the claim.",
+      "mismatch": "Position 2 conflates KWSV-LP's current Las Vegas location with its work location at Simi Valley Town Center; the evidence clearly establishes KWSV-LP had a studio in Simi Valley Town Center (confidence 0.95), resolving the apparent geographic confusion.",
+      "verdict": "SUPPORTED",
+      "decided_by": 1,
+      "confidence": 0.85,
+      "reason": "The evidence chain is complete: David May founded The May Department Stores Company (conf 0.95), Macy's West is part of that company (conf 0.70), Macy's West is located at Simi Valley Town Center (conf 0.70) where it was an anchor store, and KWSV-LP had a studio at Simi Valley Town Center (conf 0.95). Position 2's confusion about Las Vegas is resolved by the clear evidence that KWSV-LP's work location was Simi Valley Town Center.",
+      "sided_with": "wkgfc"
+    }
+  }
+}

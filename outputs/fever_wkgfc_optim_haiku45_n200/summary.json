@@ -1,0 +1,26 @@
+{
+  "n": 200,
+  "balanced_accuracy": 90.0,
+  "macro_f1": 89.96,
+  "accuracy": 90.0,
+  "forced_verdict_%": 3.5,
+  "avg_seconds": 20.2,
+  "avg_cost_per_claim": {
+    "llm_calls": 18.1,
+    "llm_calls_uncached": 5.05,
+    "prompt_tokens": 10779.5,
+    "completion_tokens": 2601.43,
+    "sparql_queries": 1.64,
+    "web_searches": 0.96
+  },
+  "errors": {
+    "wrong": 20,
+    "IK_%": 30.0,
+    "EM_%": 10.0,
+    "OC_%": 10.0,
+    "execution_error_%": 0.0
+  },
+  "dataset": "fever",
+  "kind": "wkgfc",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+}

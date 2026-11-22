@@ -1,0 +1,159 @@
+{
+  "rules": [
+    {
+      "rule": "only numeric_tolerance",
+      "fixed": 2,
+      "broken": 0,
+      "net": 2,
+      "balanced_accuracy": 91.0,
+      "refuted_precision": 87.27,
+      "refuted_recall": 96.0
+    },
+    {
+      "rule": "only numeric_tolerance, skip negated",
+      "fixed": 1,
+      "broken": 0,
+      "net": 1,
+      "balanced_accuracy": 90.5,
+      "refuted_precision": 86.49,
+      "refuted_recall": 96.0
+    },
+    {
+      "rule": "none (baseline)",
+      "fixed": 0,
+      "broken": 0,
+      "net": 0,
+      "balanced_accuracy": 90.0,
+      "refuted_precision": 85.71,
+      "refuted_recall": 96.0
+    },
+    {
+      "rule": "model's own verdict",
+      "fixed": 1,
+      "broken": 1,
+      "net": 0,
+      "balanced_accuracy": 90.0,
+      "refuted_precision": 86.36,
+      "refuted_recall": 95.0
+    },
+    {
+      "rule": "only specificity, skip negated",
+      "fixed": 1,
+      "broken": 5,
+      "net": -4,
+      "balanced_accuracy": 88.0,
+      "refuted_precision": 85.85,
+      "refuted_recall": 91.0
+    },
+    {
+      "rule": "only vague_quantifier, skip negated",
+      "fixed": 2,
+      "broken": 7,
+      "net": -5,
+      "balanced_accuracy": 87.5,
+      "refuted_precision": 86.41,
+      "refuted_recall": 89.0
+    },
+    {
+      "rule": "only specificity",
+      "fixed": 1,
+      "broken": 7,
+      "net": -6,
+      "balanced_accuracy": 87.0,
+      "refuted_precision": 85.58,
+      "refuted_recall": 89.0
+    },
+    {
+      "rule": "only vague_quantifier",
+      "fixed": 2,
+      "broken": 9,
+      "net": -7,
+      "balanced_accuracy": 86.5,
+      "refuted_precision": 86.14,
+      "refuted_recall": 87.0
+    },
+    {
+      "rule": "only temporal",
+      "fixed": 0,
+      "broken": 8,
+      "net": -8,
+      "balanced_accuracy": 86.0,
+      "refuted_precision": 84.62,
+      "refuted_recall": 88.0
+    },
+    {
+      "rule": "only temporal, skip negated",
+      "fixed": 0,
+      "broken": 8,
+      "net": -8,
+      "balanced_accuracy": 86.0,
+      "refuted_precision": 84.62,
+      "refuted_recall": 88.0
+    },
+    {
+      "rule": "only missing_evidence, skip negated",
+      "fixed": 3,
+      "broken": 15,
+      "net": -12,
+      "balanced_accuracy": 84.0,
+      "refuted_precision": 86.17,
+      "refuted_recall": 81.0
+    },
+    {
+      "rule": "only missing_evidence",
+      "fixed": 3,
+      "broken": 16,
+      "net": -13,
+      "balanced_accuracy": 83.5,
+      "refuted_precision": 86.02,
+      "refuted_recall": 80.0
+    },
+    {
+      "rule": "any non-substantive",
+      "fixed": 8,
+      "broken": 40,
+      "net": -32,
+      "balanced_accuracy": 74.0,
+      "refuted_precision": 87.5,
+      "refuted_recall": 56.0
+    }
+  ],
+  "mismatch_base_rates": {
+    "missing_evidence": {
+      "n": 19,
+      "would_fix": 3,
+      "would_break": 16,
+      "precision_as_error_detector": 15.8
+    },
+    "numeric_tolerance": {
+      "n": 2,
+      "would_fix": 2,
+      "would_break": 0,
+      "precision_as_error_detector": 100.0
+    },
+    "specificity": {
+      "n": 8,
+      "would_fix": 1,
+      "would_break": 7,
+      "precision_as_error_detector": 12.5
+    },
+    "substantive": {
+      "n": 64,
+      "would_fix": 8,
+      "would_break": 56,
+      "precision_as_error_detector": 12.5
+    },
+    "temporal": {
+      "n": 8,
+      "would_fix": 0,
+      "would_break": 8,
+      "precision_as_error_detector": 0.0
+    },
+    "vague_quantifier": {
+      "n": 11,
+      "would_fix": 2,
+      "would_break": 9,
+      "precision_as_error_detector": 18.2
+    }
+  }
+}

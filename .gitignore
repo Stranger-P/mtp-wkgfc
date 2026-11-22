@@ -1,0 +1,11 @@
+.venv/
+.env
+.cache*/
+datasets/
+__pycache__/
+*.pyc
+outputs/_to_delete/
+outputs/*/predictions.jsonl
+outputs/pact/*.audits.jsonl
+outputs/pact/*.rulings.jsonl
+references/

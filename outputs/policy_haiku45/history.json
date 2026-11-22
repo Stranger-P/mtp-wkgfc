@@ -1,0 +1,31 @@
+[
+  {
+    "epoch": 0,
+    "val_bacc": 0.826892109500805
+  },
+  {
+    "epoch": 1,
+    "val_bacc": 0.8019323671497585,
+    "mean_train_reward": 0.7618
+  },
+  {
+    "epoch": 2,
+    "val_bacc": 0.8019323671497585,
+    "mean_train_reward": 0.875
+  },
+  {
+    "epoch": 3,
+    "val_bacc": 0.8607085346215781,
+    "mean_train_reward": 0.9316000000000001
+  },
+  {
+    "epoch": 4,
+    "val_bacc": 0.857487922705314,
+    "mean_train_reward": 0.8766
+  },
+  {
+    "epoch": 5,
+    "val_bacc": 0.857487922705314,
+    "mean_train_reward": 0.8549
+  }
+]

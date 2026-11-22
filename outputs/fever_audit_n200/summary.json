@@ -1,0 +1,38 @@
+{
+  "n": 200,
+  "balanced_accuracy": 90.5,
+  "macro_f1": 90.47,
+  "per_class": {
+    "SUPPORTED": {
+      "precision": 95.51,
+      "recall": 85.0,
+      "support": 100
+    },
+    "REFUTED": {
+      "precision": 86.49,
+      "recall": 96.0,
+      "support": 100
+    }
+  },
+  "accuracy": 90.5,
+  "forced_verdict_%": 3.5,
+  "avg_seconds": 2.53,
+  "avg_cost_per_claim": {
+    "llm_calls": 18.72,
+    "llm_calls_uncached": 0.67,
+    "prompt_tokens": 11706.14,
+    "completion_tokens": 2683.92,
+    "sparql_queries": 0.21,
+    "web_searches": 0.01
+  },
+  "errors": {
+    "wrong": 19,
+    "IK_%": 26.3,
+    "EM_%": 10.5,
+    "OC_%": 10.5,
+    "execution_error_%": 0.0
+  },
+  "dataset": "fever",
+  "kind": "wkgfc_audit",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+}

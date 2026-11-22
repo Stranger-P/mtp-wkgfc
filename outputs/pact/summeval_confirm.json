@@ -1,0 +1,1288 @@
+{
+  "dataset": "summeval",
+  "run": "outputs/summeval_direct_gold",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "n_evaluated": 146,
+  "n_audited": 60,
+  "n_flipped": 38,
+  "flips_correct": 9,
+  "flips_wrong": 29,
+  "flip_precision": 23.7,
+  "flip_types": {
+    "number": 8,
+    "overstatement": 15,
+    "relation": 10,
+    "added": 2,
+    "entity": 3
+  },
+  "balanced_accuracy": {
+    "before": 73.58,
+    "after": 63.25
+  },
+  "accuracy": {
+    "before": 71.92,
+    "after": 58.22
+  },
+  "mcnemar": {
+    "b": 29,
+    "c": 9,
+    "p": 0.0021
+  },
+  "seconds": 79.4,
+  "audits": {
+    "summeval-1050": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1058": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "a must-see video for all football fans",
+      "document_says": "The document presents this as sarcasm: 'Just enough time for the kick off, a goal kick and the final whistle. A must-see video for all football fans.' The context makes clear this is ironic commentary on how boring the match was, not a genuine recommendation.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1047": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the only person who raised a paddle - for $260,000 - was a sotheby's employee trying to jump start the bidding",
+      "document_says": "the only person who raised a paddle - for $260,000 - was a Sotheby's employee trying to jump start the bidding. The current owner of the signage is Yankee Hall of Famer Reggie Jackson, who purchased the 10-feet-tall letters for an undisclosed amount after the stadium saw its final game in 2008.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1009": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "the 44-year-old took charge of the club last summer, signing a two-year-deal",
+      "document_says": "The 44-year-old took only took charge of the club last summer, signing a two-year-deal, and he has a contract until 2016",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1061": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "doncaster 's media team faced a tough challenge compling the match highlights of 0-0 draw",
+      "document_says": "Doncaster's media team faced a tough challenge compiling the match highlights of 0-0 draw. So they made it short and sweet, just 27 seconds in fact with 14 seconds of match action.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1149": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1174": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1083": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "admits the possibility liverpool could use their interest in sanchez as leverage during negotiations over luis suarez 's move to the nou camp last summer was always on the cards",
+      "document_says": "Wenger says 'I was (aware of Liverpool's interest), but you never know if it is really true, but I thought it could be because of the interest in Suarez (from Barcelona).' He expresses uncertainty about whether Liverpool's interest was real, not a definite admission that it was a possibility.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1164": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "She was going to spend the money on a \u00a3 500 grave stone.",
+      "document_says": "The \u00a3207 was put aside because the head stone was going to cost \u00a3500 altogether. The \u00a3207 was only part of the total cost, not the full amount she was going to spend.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1182": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "costa feigned his failing memory",
+      "document_says": "Prosecutor Shane Drumgold suggested that Costa feigned his failing memory while being interviewed by Professor Mullin - who denied these claims.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1176": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "Luigi Costa, 71, is accused of murdering his elderly neighbour Terrence Freebody",
+      "document_says": "Luigi Costa, 71, is accused of stomping on his elderly neighbour Terrence Freebody's head, cutting his throat and stabbing him multiple times",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1209": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "one woman called the video 'horrible' and another said 'i hate crocodiles now'",
+      "document_says": "One woman called the video 'horrible' and another said 'I hate crocodiles now'. But crocodiles are a common site in Puerto Vallarta... One social media user called the video 'horrible' and another said 'i hate crocodiles now'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1192": {
+      "found": true,
+      "type": "added",
+      "quote_from_claim": "'We're sorry we didn't get back to you as quickly as we could. We're sorry you were delayed and that you had to wait for your new toy,' a spokesperson said. 'We have offered to send the toy back to you and we will refund the cost of the toy to you.",
+      "document_says": "East Midlands Airport apologised for the inconvenience but pointed out they had offered to post the toy back to the family's home in Doncaster, South Yorkshire. The spokeswoman said: 'The safety and security of our passengers is our first priority and all regulations on security are set by the government.'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1270": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1235": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "radamel falcao spent eight years with the argentine side before leaving for porto in 2009 and river plate are open to equal colombia 's all-time goalscoring record with 24 goals",
+      "document_says": "The Colombia forward spent eight years with the Argentine side before leaving for Porto in 2009 and River Plate are open to Falcao returning. [Separately] Falcao has been in good goalscoring form for his country this week, finding the net three times in two games to equal Colombia's all-time goalscoring record with 24 goals.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1309": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1301": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1414": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1383": {
+      "flip": false
+    },
+    "summeval-1420": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1424": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "a single fixed device was switched off in west midlands",
+      "document_says": "Around 300 speed and traffic camera, using old technology, were turned off across the region in March 2013",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-143": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "more than 200 yazidis",
+      "document_says": "Osman said 217 Yazidis were released. Omar, the Peshmerga commander, had a higher count: 228.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-147": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "jaish al adal has also claimed responsibility for the attack",
+      "document_says": "A militant group called Jaish al Adal claimed responsibility for the attack, according to Iranian state media and a Twitter account believed to be associated with the organization.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1447": {
+      "flip": false
+    },
+    "summeval-1507": {
+      "flip": false
+    },
+    "summeval-1561": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "cesc fabregas collected the loose ball and sent it into the path of eden hazard",
+      "document_says": "Cesc Fabregas then collected the loose ball and released it to Oscar before his back-heel sent it into the path of the oncoming Hazard",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1528": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "Chelsea have made an offer for FC Tokyo's 22-year-old forward Yoshinori Muto",
+      "document_says": "According to club president Naoki Ogane, Chelsea have made an offer. Ogane said: 'It is true that Chelsea sent us an offer for Muto. It is a formal offer with conditions.' However, Muto himself states 'I have not decided yet at all' and admits uncertainty about joining despite being pleased with the bid.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1533": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "chelsea have made an offer for fc tokyo 's 22-year-old yoshinori muto",
+      "document_says": "Ogane claims that Chelsea have made an offer for Muto. Muto admits that he isn't sure if he will join the Premier League title chasers despite being pleased with their bid.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-21": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "left her primary feeding ground off russia",
+      "document_says": "left her primary feeding ground off Russia's Sakhalin Island to cross the Pacific Ocean and down the West Coast of the United States to Baja, Mexico",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-260": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-217": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "six others - including an infant and two young girls",
+      "document_says": "Six others - including an infant and two young girls - have been taken to Ipswich Hospital with minor injuries or for further assessment. A man has also suffered hand lacerations and two females escaped injuries.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-256": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "bolt is the iaaf/btc general secretary garth gayle said he always does",
+      "document_says": "Garth Gayle is the JAAA General Secretary, not Bolt. The document states that Garth Gayle (the General Secretary) commented about Bolt, not that Bolt is the General Secretary.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-226": {
+      "flip": false
+    },
+    "summeval-295": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-376": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-371": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "he may have married his red-headed kitchen maid out of duty",
+      "document_says": "He may have married his red-headed kitchen maid out of duty, but as he tells her that she makes him a better man, audiences can have little doubt about his feelings.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-292": {
+      "flip": false
+    },
+    "summeval-377": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "within ten minutes of tomorrow night's episode, fans will see aidan turner's dashing ross poldark gaze lovingly at his new baby daughter",
+      "document_says": "Within ten minutes of tomorrow night's episode, fans will see Aidan Turner's dashing Ross Poldark gaze lovingly at his new baby daughter. Just minutes after \u2013 once again without any nod to the passing of time \u2013 she is giving birth",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-448": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "managers at the passport agency made # 42 million profit in bonuses",
+      "document_says": "HM Passport Office made a surplus of \u00a342.3 million between April and October last year. In 2013-14, managers were handed a total of \u00a31.8 million in bonuses, with the average reward \u00a3499 and the highest \u00a33,500.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-427": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-538": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "his parents jumped in and pulled him to safety",
+      "document_says": "The child was rescued by his parents before firefighters and paramedics arrived on the scene.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-600": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "A man in Thailand",
+      "document_says": "The man is Roland Giroux, and no location (Thailand or otherwise) is mentioned in the document",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-631": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-618": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "the top two sides in group b meet at the cardiff city stadium on june 12",
+      "document_says": "Belgium and Wales both have 11 points from five games with Marc Wilmots' side - ranked fourth in the world - on top spot because of a superior goal difference. But Wales' comprehensive 3-0 victory in Israel last weekend has seen expectations rise... Wales to the top of the Group B table on goal difference",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-680": {
+      "found": true,
+      "type": "added",
+      "quote_from_claim": "The Premier League is not the best for Falcao. Falcao has to work harder. He's a player who needs to be more consistent.",
+      "document_says": "The document contains no such quotes or statements from Nabil Dirar. Dirar's actual quotes are: 'I think Falcao must be biting his fingers [ruing the fact] he's gone' and 'Here, he would have played and participated in the Champions League. But he may need more atmosphere. In Monaco, he was not feeling well.'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-65": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "tim durkan",
+      "document_says": "Tim Durkan",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-701": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-76": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "The winds carried the smoke from Siberia across the Pacific Ocean and brought it to the Northwest",
+      "document_says": "The winds carried the smoke from Siberia across the Pacific Ocean and brought it to the Pacific Northwest. Parts of Oregon, Washington and British Columbia are seeing the results",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-731": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "posting a picture putting his feet up with his dog",
+      "document_says": "posting a picture putting his feet up with his dog, but later described as 'taking a snap of him playing with his pet'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-78": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the fires were started in southeastern siberia on april 14",
+      "document_says": "The fires were started in southeastern Siberia, by farmers burning grass in their fields. But on April 14, it is believed that the flames quickly grew out of control because of strong winds",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-706": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "manchester city have been faltering and lost 4-2 at manchester united",
+      "document_says": "Manchester City have been faltering and lost 4-2 at Manchester United",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-870": {
+      "flip": false
+    },
+    "summeval-915": {
+      "flip": false
+    },
+    "summeval-8": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-728": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "Ozil, who has been in fine form as Arsenal beat Georgia 2-0 in their Euro 2016 qualifier on Sunday",
+      "document_says": "Germany beat Georgia 2-0 in their Euro 2016 qualifier on Sunday. Ozil was playing for Germany on international duty, not Arsenal.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-981": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "ben stokes first turned up at the kensington oval this week",
+      "document_says": "When Ben Stokes first turned up at the Kensington Oval this week someone would have said: 'Mind that locker, Stokesey.' It was here, of course, that Stokes broke his wrist punching a locker after being dismissed last year",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-994": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "england ace hart , pictured saving a shot by citadin eder , is desperate to add to his 50 international caps",
+      "document_says": "The document states Hart 'received his 50th cap' and 'I want to keep going' but does not say he is 'desperate to add to his 50 international caps'. The document shows Hart wanting to continue, but the claim's characterization of him as 'desperate to add to' his caps (implying he hasn't reached 50 yet or is urgently trying to exceed it) contradicts the fact that he has already achieved 50 caps.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-927": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "vincent kompany was dismissed for two bookable offences against wales",
+      "document_says": "Vincent Kompany was dismissed for two bookable offences during Belgium's narrow 1-0 defeat of Israel in their Euro 2016 qualifier on March 31, meaning he is now suspended for the match against Wales in June",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-82": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "their ship carrying 550 people capsized in the mediterranean sea about 80 miles off the libyan coast",
+      "document_says": "Save the Children fears 400 migrants could be missing, citing testimony from survivors who said their ship carrying 550 people capsized. However, the Italian coast guard said it cannot confirm such an incident and has not yet found evidence at sea to indicate a migrant boat carrying approximately 550 has capsized.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-955": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "only seven minutes remaining",
+      "document_says": "Townsend was brought on in the 83rd minute for Tottenham as they drew 0-0 against Burnley",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1003": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-101": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1000": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "Joe Hart is a legend of the game",
+      "document_says": "The document describes Buffon as 'a legend of the game' and Hart as someone who 'look[s] up to' Buffon. Hart is praised for his 50 caps and described as learning, but is never called a legend himself.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "donald sterling accused stiviano of targeting extremely wealthy older men",
+      "document_says": "Rochelle 'Shelly' Sterling accused Stiviano of targeting extremely wealthy older men. She claimed Donald Sterling used the couple's money to buy Stiviano a Ferrari, two Bentleys and a Range Rover",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1002": {
+      "flip": false
+    },
+    "summeval-1014": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "the 44 - year - old took only took charge of the club last summer , signing a two - year - deal , and is only six games away from winning the title",
+      "document_says": "The document states Luis Enrique 'took only took charge of the club last summer, signing a two-year-deal' and mentions he 'is only six games away from winning the title', but does not specify that he is 44 years old. The document only states 'The 44-year-old took only took charge of the club last summer' without explicitly confirming this age applies to Luis Enrique in context.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.6,
+      "flip": true
+    },
+    "summeval-1018": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "barcelona president josep maria bartemou",
+      "document_says": "Barcelona club president Josep Maria Bartomeu",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1011": {
+      "flip": false
+    },
+    "summeval-1025": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "accused of having sex with pupil , 15 , in her car on consecutive nights in january",
+      "document_says": "The teen claims the sexual relationship took place in her car late at night on January 18 and 19. According to the affidavit, seen by the Star-Telegram, the teen claims...",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-107": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1033": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "in police interview she admitted kissing 15-year-old and letting him touch breasts",
+      "document_says": "in a police interview she admitted kissing the pupil and allowing him to touch her breasts in April the previous year",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1077": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the french coach admits the possibility liverpool could use their interest in sanchez as leverage during negotiations over luis suarez 's move to the nou camp",
+      "document_says": "Wenger states 'I was (aware of Liverpool's interest), but you never know if it is really true' - indicating uncertainty about whether Liverpool's interest was genuine, not a definite admission that they could use it as leverage",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1088": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "he has been erected featuring a photograph of torres and his dog",
+      "document_says": "a billboard, paid for by the Kenosha Professional Police Association, has been erected featuring a photograph of Torres and his dog",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1090": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1037": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "now she has been arrested again after another pupil, also accused granado of having sex with him on two consecutive nights in january this year",
+      "document_says": "the teen claims the sexual relationship took place in her car late at night on January 18 and 19... According to the affidavit, seen by the Star-Telegram, the teen claims...",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1098": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "torres is currently on leave pending the outcome of the investigation into the deadly shooting",
+      "document_says": "Torres is currently on leave pending the outcome of the investigation into the deadly shooting. In the meantime a billboard, paid for by the Kenosha Professional Police Association, has been erected featuring a photograph of Torres and his dog.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1102": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "torres has been erected featuring a photograph of torres and his dog",
+      "document_says": "a billboard, paid for by the Kenosha Professional Police Association, has been erected featuring a photograph of Torres and his dog",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1106": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1108": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1085": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-111": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "he later clarified that the rocket landed , but tipped over",
+      "document_says": "Elon Musk tweeted: 'Ascent successful. Dragon enroute to Space Station. Rocket landed on droneship, but too hard for survival.' He later clarified that the rocket landed, but tipped over.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1060": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "doncaster tested the patience of the most ardent fan",
+      "document_says": "Doncaster's League One encounter against Fleetwood tested the patience of the most ardent fan",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1097": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1096": {
+      "found": true,
+      "type": "added",
+      "quote_from_claim": "A GoFundMe page set up to help Siler's family pay for a memorial has raised more than $2,000 in less than 48 hours.",
+      "document_says": "The document contains no mention of any GoFundMe page, memorial fundraising, or any amount of money raised.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.99,
+      "flip": true
+    },
+    "summeval-1120": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "the wedding is the first permanent graceland exhibit of the singer's artifacts outside his iconic memphis home",
+      "document_says": "the chapel is part of the first permanent Graceland exhibit of the singer's artifacts outside his iconic Memphis, Tennessee, home",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1121": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1109": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "mr katter said the government believes mr gordon would quit after he was recently accused of domestic violence",
+      "document_says": "Mr Katter said the Government believes Mr Gordon would quit after he was recently accused of domestic violence - and later admitted to his criminal past. The document also states Mr Gordon 'was forced to quit the Queensland Labor Party last week in the wake of being accused of domestic violence and withholding his criminal history'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1115": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1125": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1128": {
+      "found": true,
+      "type": "added",
+      "quote_from_claim": "The bride's mother, Doris Presley, is also a part of the group that will receive a $1 million cash prize.",
+      "document_says": "The document does not mention the bride's mother, does not name anyone as 'Doris Presley', and does not mention any $1 million cash prize.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.99,
+      "flip": true
+    },
+    "summeval-1111": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "federal mp bob katter has accused the queensland government of believing embattled mp billy gordon would quit",
+      "document_says": "Mr Katter said the Government believes Mr Gordon would quit after he was recently accused of domestic violence - and later admitted to his criminal past. 'In the last two cases where this occurred in the federal parliament, there was never any question raised about the member resigning. So why was it assumed here that Billy Gordon would resign?' Mr Katter's statement reads. 'I can't help but think that the Queensland Government thought they had a little black puppet on a string.'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1129": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1130": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-113": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1134": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "elvis performed more than 830 sold-out shows",
+      "document_says": "Westgate, formerly the Las Vegas Hilton, is where Elvis performed more than 830 sold-out shows",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1137": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1110": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1139": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1142": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1131": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1135": {
+      "flip": false
+    },
+    "summeval-1150": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1171": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the jury can return a not guilty verdict if costa's unstable mindset at time of the attack can be proven",
+      "document_says": "The jury can return a not guilty verdict if Costa's unstable mindset at time of the attack can be proven.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1161": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "accused house-mate jamie, also called jamie, of stealing from her",
+      "document_says": "The bereaved mother, named Dawn, was appearing on The Jeremy Kyle show and accused long-term chum, convicted burglar Jamie, of making off with the cash. Jamie lives with Dawn and her partner who is also called Jamie. The house-mate Jamie who stole the money is the convicted burglar, not the partner.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1178": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "costa's state of mind is critical to case, as .",
+      "document_says": "Costa's state of mind is critical to case, as The jury can return a not guilty verdict if Costa's unstable mindset at time of the attack can be proven.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1184": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "security officers described as `over-zealous` by the boy's father. he took exception to james's harmless toy",
+      "document_says": "security officers, who were described as 'over-zealous' by the boy's father, then took exception to James's harmless toy",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1185": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "plastic nerf gun",
+      "document_says": "The document describes it as a 'brightly coloured toy' that 'fires sponge darts' and a '\u00a36 plastic gadget' described as a 'semi-automatic soft dart gun' by manufacturers, but never specifically calls it a 'nerf gun'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1188": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1154": {
+      "flip": false
+    },
+    "summeval-12": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "A judge orders V. Stiviano to pay back more than $ 2.6 million in gifts from Donald Sterling.",
+      "document_says": "A Los Angeles judge has ordered V. Stiviano to pay back more than $2.6 million in gifts after Sterling's wife sued her. In the lawsuit, Rochelle \"Shelly\" Sterling accused Stiviano of targeting extremely wealthy older men. She claimed Donald Sterling used the couple's money to buy Stiviano a Ferrari, two Bentleys and a Range Rover, and that he helped her get a $1.8 million duplex.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1204": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1195": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1200": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "a black dog wearing a red collar in new zealander 's mouth",
+      "document_says": "The clip shows a large croc calmly moving through the marina with a black dog wearing a red collar lifeless in its mouth. The dog belonged to the local bike shop's owner, not the New Zealander.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1205": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1216": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "paul downton host paul downton as england 's managing director",
+      "document_says": "The dismissal of Paul Downton as England's managing director - the document states he was dismissed/sacked, not that he hosted or currently holds the position",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1214": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "the dog has been viewed more than half a million times online",
+      "document_says": "A video of a menacing crocodile swimming through a public marina with a dead pet dog locked in between its jaws has been viewed more than half a million times online",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1224": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "The England captain has been sacked from his role as managing director",
+      "document_says": "Paul Downton (England's managing director) has been dismissed/sacked, not the England captain. Kevin Pietersen is a batsman/former England captain, not the current managing director.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1151": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1226": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-125": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1240": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "River Plate are keen to sign Manchester United striker Radamel Falcao, but have to work through the process of bringing him to the club",
+      "document_says": "River Plate are keen to sign Manchester United striker Radamel Falcao but admit a deal is complicated",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1254": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1257": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1255": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "carlos tevez has told juventus he wants to leave the club this summer",
+      "document_says": "he has reportedly told the club he wishes to leave this summer",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1261": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "tevez is on course to win a second serie a title with the old lady",
+      "document_says": "Tevez is on course to win a second Serie A title with the Old Lady and still has a shot at European glory",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1258": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "carlos tevez has been told to terminate his contract with juventus",
+      "document_says": "Boca have confirmed they are close to completing a deal for the 31-year-old, but club president Daniel Angelici has stressed that Tevez must terminate his contract with the Italians first. 'We know that he wants to return to Argentina with Boca Juniors but he must first terminate his contract with Juventus'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-121": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1249": {
+      "flip": false
+    },
+    "summeval-1272": {
+      "found": true,
+      "type": "entity",
+      "quote_from_claim": "in Cardiff",
+      "document_says": "at the seaside town of Penarth, South Wales",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1288": {
+      "found": true,
+      "type": "relation",
+      "quote_from_claim": "his replacement Leighton Baines had no problem taking the shot",
+      "document_says": "Baines did not take the shot. Barkley took the penalty kick. The document states 'Leighton was happy to given him that responsibility' - meaning Baines was happy to let Barkley take it, not that Baines took it himself.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.95,
+      "flip": true
+    },
+    "summeval-1269": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1300": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1298": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1306": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-119": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1305": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1312": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "it boasts a bedrooms , multiple rooms and a lounge",
+      "document_says": "It contains a large dining room where travellers can enjoy meals cooked in an adjoining kitchen, with a lounge and 'state room' at the back of the plane.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.75,
+      "flip": true
+    },
+    "summeval-1277": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1319": {
+      "flip": false
+    },
+    "summeval-129": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-132": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1321": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the custom-built boeing 747-8 is believed to have cost its owner \u00a3400million after it was customised over three years",
+      "document_says": "The custom-built Boeing 747 is believed to have cost its ultra-wealthy owner \u00a3400million after it was customised to fit his specifications exactly over a three-year period.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1315": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1316": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1359": {
+      "found": true,
+      "type": "overstatement",
+      "quote_from_claim": "the proposals include changing the rules so that ` home-grown ' means having trained in england for three years before the age of 18",
+      "document_says": "The proposals also include changing the rules so that 'home-grown' means having trained in England for three years before the age of 18 rather than before 21.",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1330": {
+      "found": true,
+      "type": "number",
+      "quote_from_claim": "dayna dobias , 19",
+      "document_says": "The document states 'Dayna Dobias, 19' in the first sentence, but later states 'Dayna Dobias, 18' in the caption 'Challenging: Dayna Dobias, 18, is hoping change the way people with disabilities are represented by the television, film and the fashion industry'",
+      "verdict": "INCONSISTENT",
+      "confidence": 0.85,
+      "flip": true
+    },
+    "summeval-1345": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    },
+    "summeval-1366": {
+      "found": false,
+      "type": "none",
+      "quote_from_claim": "",
+      "document_says": "",
+      "verdict": "CONSISTENT",
+      "confidence": 0.95,
+      "flip": false
+    }
+  }
+}
